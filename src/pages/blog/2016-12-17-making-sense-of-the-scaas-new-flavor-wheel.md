@@ -10,8 +10,6 @@ tags:
 ---
 ![WIHA Logo](/img/WIHA LOGO Badge Colour.png "The WIHA logo")
 
-This tests adding an image
-
-
+This tests adding [an image](http://localhost:8888/blog)
 
 **As welll as formatting some text**
