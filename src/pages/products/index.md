@@ -47,6 +47,11 @@ full_image: /img/WIHA LOGO Badge Colour.png
 pricing:
   heading: Plans
   description: Planning
-  plans: []
+  plans:
+    - description: describe
+      items:
+        - dafd
+      plan: Needs a plan
+      price: '1'
 ---
 
