@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: The Home of Wellington Ice Hockey
-image: /img/WIHA Horizontal Colour.png
+image: /img/WIHA LOGO Badge Colour.png
 heading: Great coffee with a conscience
 subheading: The fastest sport in the capital
 mainpitch:
