@@ -1,19 +1,13 @@
 ---
 templateKey: index-page
 title: The Home of Wellington Ice Hockey
-image: /img/WIHA LOGO Badge Colour.png
+image: /img/WIHA Horizontal Colour.png
 heading: Great coffee with a conscience
 subheading: The fastest sport in the capital
 mainpitch:
   title: Join the team!
   description: Play some hockey
 description: Description needs some details
-intro:
-  blurbs:
-    - image: /img/WIHA LOGO Badge Colour.png
-      text: at least one blurb
-  heading: Intro needs some details
-  description: Another description requiring some details
 main:
   heading: Great coffee with no compromises
   description: >
