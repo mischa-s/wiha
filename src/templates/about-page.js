@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Features from '../components/Features'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, contentComponent, intro }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -17,6 +18,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 {title}
               </h2>
               <PageContent className="content" content={content} />
+              {intro && <Features gridItems={intro.blurbs} /> }
             </div>
           </div>
         </div>
@@ -29,6 +31,9 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  intro: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
 }
 
 const AboutPage = ({ data }) => {
@@ -40,6 +45,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        intro={post.frontmatter.intro}
       />
     </Layout>
   )
@@ -53,10 +59,24 @@ export default AboutPage
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       html
       frontmatter {
         title
+        intro {
+          blurbs {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            text
+          }
+          heading
+          description
+        }
       }
     }
   }

@@ -124,3 +124,20 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).
+
+
+## Adding a new static page
+ - `static/admin/config.yml`
+  under
+    - name: "static"
+      label: "Static Pages"
+      files:
+ - `src/cms/preview-templates`
+  - some config and rendertemplate
+ - `src/templates`
+  - page template
+    - pass props from page to template
+    - add content to template
+    - prop types
+    - graphql query
+
