@@ -64,6 +64,9 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         intro {
+          blurbs {
+            text
+          }
           heading
           description
         }
