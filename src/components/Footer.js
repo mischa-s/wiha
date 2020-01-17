@@ -61,6 +61,9 @@ const Footer = class extends React.Component {
               <Link to="/" className="button is-black is-medium">
                 Home
               </Link>
+              <Link className="button is-black is-medium" to="/play">
+                Play
+              </Link>
               <Link className="button is-black is-medium" to="/about">
                 About
               </Link>

@@ -53,6 +53,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: Team, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}, {label: Team Members, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: markdown}]}]}
+      - file: "src/pages/play/index.md"
+        label: "Play"
+        name: "play"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "play-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Team, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}, {label: Team Members, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: markdown}]}]}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
