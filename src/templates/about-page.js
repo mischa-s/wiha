@@ -64,16 +64,6 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
           heading
           description
         }

@@ -1,7 +1,6 @@
 ---
 templateKey: product-page
 title: Our Coffee
-image: /img/WIHA LOGO Badge Colour.png
 heading: Great coffee with a conscience
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -9,9 +8,6 @@ description: >-
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 intro:
-  blurbs:
-    - image: /img/WIHA LOGO Badge Colour.png
-      text: A blurb
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -25,15 +21,6 @@ main:
     That’s why we’re meticulous and transparent about each step of the coffee’s
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
-  image1:
-    alt: image
-    image: /img/WIHA LOGO Badge Colour.png
-  image2:
-    alt: image
-    image: /img/WIHA LOGO Badge Colour.png
-  image3:
-    alt: Coffee beans
-    image: /img/WIHA LOGO Badge Colour.png
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: >-
