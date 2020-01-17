@@ -22,9 +22,9 @@ export const ProductPageTemplate = ({
     <div
       className="full-width-image-container margin-top-0"
       // style={{
-      //   backgroundImage: `url(${
-      //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-      //   })`,
+        // backgroundImage: `url(${
+        //   !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        // })`,
       // }}
     >
       <h2
@@ -64,18 +64,18 @@ export const ProductPageTemplate = ({
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
+                        {/* <PreviewCompatibleImage imageInfo={main.image1} /> */}
                       </article>
                     </div>
                     <div className="tile is-parent">
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
+                        {/* <PreviewCompatibleImage imageInfo={main.image2} /> */}
                       </article>
                     </div>
                   </div>
                   <div className="tile is-parent">
                     <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
+                      {/* <PreviewCompatibleImage imageInfo={main.image3} /> */}
                     </article>
                   </div>
                 </div>
@@ -83,13 +83,13 @@ export const ProductPageTemplate = ({
               <Testimonials testimonials={testimonials} />
               <div
                 className="full-width-image-container"
-                style={{
-                  backgroundImage: `url(${
-                    fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
-                  })`,
-                }}
+                // style={{
+                //   backgroundImage: `url(${
+                //     fullImage.childImageSharp
+                //       ? fullImage.childImageSharp.fluid.src
+                //       : fullImage
+                //   })`,
+                // }}
               />
               <h2 className="has-text-weight-semibold is-size-2">
                 {pricing.heading}
@@ -169,16 +169,13 @@ export const productPageQuery = graphql`
           heading
           description
         }
+        main {
+          heading
+          description
+        }
         testimonials {
           author
           quote
-        }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
         }
         pricing {
           heading
