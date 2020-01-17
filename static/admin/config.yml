@@ -10,7 +10,12 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: static/img
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: wiha
+    api_key: 671718685741443
+
 public_folder: /img
 
 collections:
