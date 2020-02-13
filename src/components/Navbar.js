@@ -1,82 +1,64 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import logo from '../img/logo.png'
+import React from "react";
+import { Link } from "gatsby";
+import logo from "../img/logo.png";
+import styled from "@emotion/styled";
+import { Button } from "@chakra-ui/core";
+import { Grid } from "@chakra-ui/core";
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
-    }
-  }
+const NavbarStyle = styled.div`
+  background-color: black;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+`;
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
-
-  render() {
-    return (
-      <nav
-        className="navbar is-flex-desktop is-black"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container is-centered">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item navbar-logo" title="Logo">
-              <img src={logo} alt="WIHA" style={{ width: '125px', height: '125px' }} />
+const NavBarContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 75px;
+`;
+const NavLogo = styled.img`
+  width: 125px;
+  height: 125px;
+  margin-top: 25px;
+`
+function Navbar() {
+  return (
+    <nav role="navigation" aria-label="main-navigation">
+      <NavbarStyle>
+        <NavBarContent>
+          <div>
+            <Link to="/" title="Logo">
+              <NavLogo
+                src={logo}
+                alt="WIHA"
+              />
             </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
+            <div data-target="navMenu" onClick={() => console.log("hey")}></div>
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/play">
-                Play
+          <div id="navMenu">
+            <div>
+              <Link>
+                <Button size="lg" variantColor="black">Play</Button>
               </Link>
-              <Link className="navbar-item" to="/about">
-                About
+              <Link>
+                <Button size="lg" variantColor="black">About</Button>
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
+              <Link>
+                <Button size="lg" variantColor="black">Blog</Button>
               </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
+              <Link>
+                <Button size="lg" variantColor="black">Contact</Button>
               </Link>
             </div>
           </div>
-        </div>
-      </nav>
-    )
-  }
+        </NavBarContent>
+      </NavbarStyle>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
