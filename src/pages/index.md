@@ -9,7 +9,7 @@ mainpitch:
     Thats the spirit! [Play some hockey ](/play) 
 
 
-    ![](https://res.cloudinary.com/wiha/image/upload/v1579286552/logo-horizontal_e1nyg9.png)
+    ![](https://res.cloudinary.com/wiha/image/upload/v1581723650/wellington-hockey_nydx3z.jpg)
 heading: What else should we include
 description: Description needs some details
 ---
