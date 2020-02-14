@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
+import styled from "@emotion/styled";
+import { Button } from "@chakra-ui/core";
+import { Heading } from "@chakra-ui/core";
 
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
-import { Button } from "@chakra-ui/core";
 
 export const IndexPageTemplate = ({
   image,
@@ -14,56 +16,35 @@ export const IndexPageTemplate = ({
   mainpitch,
   description
 }) => {
+  const Hero = styled.div`
+    display: flex;
+    height: 350px;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed
+    backgroundImage: url(${image})
+  `;
   return (
     <div>
-      <div
+      <Hero
         style={{
           backgroundImage: `url(${
             image
             // !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          backgroundPosition: `top left`,
-          backgroundAttachment: `fixed`
+          })`
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            height: "150px",
-            lineHeight: "1",
-            justifyContent: "space-around",
-            alignItems: "left",
-            flexDirection: "column"
-          }}
-        >
-          <h1
-            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-            style={{
-              boxShadow:
-                "rgb(254, 240, 1) 0.5rem 0px 0px, rgb(254, 240, 1) -0.5rem 0px 0px",
-              backgroundColor: "rgb(254, 240, 1)",
-              color: "black",
-              lineHeight: "1",
-              padding: "0.25em"
-            }}
-          >
-            {title}
-          </h1>
-          <h3
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-            style={{
-              boxShadow:
-                "rgb(254, 240, 1) 0.5rem 0px 0px, rgb(254, 240, 1) -0.5rem 0px 0px",
-              backgroundColor: "rgb(254, 240, 1)",
-              color: "black",
-              lineHeight: "1",
-              padding: "0.25em"
-            }}
-          >
-            {subheading}
-          </h3>
-        </div>
-      </div>
+        <Heading as="h2" mb="4" size="lg" bg="rgb(254, 240, 1)" p={2} w="fit-content">
+          {title}
+        </Heading>
+        <Heading as="h3" size="md" bg="rgb(254, 240, 1)" p={2} w="fit-content">
+          {subheading}
+        </Heading>
+      </Hero>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
