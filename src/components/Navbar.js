@@ -46,7 +46,6 @@ function Navbar() {
                 alt="WIHA"
               />
             </Link>
-            <div data-target="navMenu" onClick={() => console.log("hey")}></div>
           </div>
           <div id="navMenu">
             <NavItems>

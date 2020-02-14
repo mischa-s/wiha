@@ -9,6 +9,31 @@ import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 
+const IntroBlurb = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em;
+`;
+
+const MarkdownImageStyle = styled.img`
+  width: 25em;
+  margin: 1rem auto;
+`;
+
+const MarkdownLinkStyle = styled.a`
+  text-decoration: underline;
+`;
+
+function LinkRenderer(props) {
+  return <MarkdownLinkStyle>{props.children}</MarkdownLinkStyle>;
+}
+
+function ImageRenderer(props) {
+  return <MarkdownImageStyle>{props.children}</MarkdownImageStyle>;
+}
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -18,24 +43,17 @@ export const IndexPageTemplate = ({
   description
 }) => {
   const Hero = styled.div`
-    display: flex;
-    height: 18em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed
-    backgroundImage: url(${image})
+  display: flex;
+  height: 18em;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed
+  backgroundImage: url(${image})
   `;
 
-  const IntroBlurb = styled.section`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2em;
-  `;
   return (
     <div>
       <Hero
@@ -73,9 +91,10 @@ export const IndexPageTemplate = ({
           {mainpitch.title}
         </Heading>
         <Heading as="h5" size="sm" p={2} w="fit-content">
-          <p>
-            <ReactMarkdown source={mainpitch.description} />
-          </p>
+          <ReactMarkdown
+            renderers={{ link: LinkRenderer, image: ImageRenderer }}
+            source={mainpitch.description}
+          />
         </Heading>
         <Heading as="h4" size="md" p={2} w="fit-content">
           {heading}
