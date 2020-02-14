@@ -5,7 +5,15 @@ import Navbar from "../components/Navbar";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import { ThemeProvider, ColorModeProvider, CSSReset } from "@chakra-ui/core";
-import theme from "../theme/theme"
+import theme from "../theme/theme";
+import styled from "@emotion/styled";
+
+const MinHeightForTemplate = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
 
 const WrapRootElement = ({ element }) => (
   <ThemeProvider theme={theme}>
@@ -72,9 +80,11 @@ const TemplateWrapper = ({ children }) => {
               content={`${withPrefix("/")}img/og-image.jpg`}
             />
           </Helmet>
-          <Navbar />
-          <div>{children}</div>
-          <Footer />
+          <MinHeightForTemplate>
+            <Navbar />
+            <div>{children}</div>
+            <Footer />
+          </MinHeightForTemplate>
         </>
       }
     />
