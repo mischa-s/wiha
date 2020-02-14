@@ -12,7 +12,7 @@ const MinHeightForTemplate = styled.div`
   min-height: 100vh;
 `;
 
-const WrapRootElement = ({ element }) => (
+const ThemeWrapper = ({ element }) => (
   <ThemeProvider theme={theme}>
     <ColorModeProvider>
       <CSSReset />
@@ -24,7 +24,7 @@ const WrapRootElement = ({ element }) => (
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <WrapRootElement
+    <ThemeWrapper
       element={
         <>
           <Helmet>
