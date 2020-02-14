@@ -5,7 +5,10 @@ image: 'https://res.cloudinary.com/wiha/image/upload/v1581635370/IMG_3183_jhoftu
 subheading: The fastest sport in the capital
 mainpitch:
   title: Join the team!
-  description: Play some hockey
+  description: |-
+    ![](https://res.cloudinary.com/wiha/image/upload/v1579285004/sample.jpg)
+
+    Play some hockey
 heading: What else should we include
 description: Description needs some details
 ---
