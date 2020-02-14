@@ -7,7 +7,6 @@ import logo from "../img/logo-horizontal.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
-import vimeo from "../img/social/vimeo.svg";
 import github from "../img/github-icon.svg";
 
 const Footer = function() {
@@ -28,9 +27,10 @@ const Footer = function() {
   `;
 
   const SocialIcon = styled.img`
-    color: white;
-    width: 2em;
-    height: 2em;
+    background: #fef001;
+    padding: .5em;
+    width: 2.5em;
+    height: 2.5em;
   `;
 
   const FooterLogo = styled.img`
@@ -50,10 +50,11 @@ const Footer = function() {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
-    margin-top: 1em;
+    margin-top: .75em;
+    margin-bottom: .5em;
     width: 50%;
     min-width: 26em;
-    background: #fef001;
+    border: 2px solid #fef001;
     justify-content: space-between;
   `;
 
@@ -63,19 +64,19 @@ const Footer = function() {
       <LinksWrapper>
         <FooterPageLinks>
           <Link to="/">
-            <Button variantColor="black" variant="link">Home</Button>
+            <Button variantColor="yellow" variant="link">Home</Button>
           </Link>
           <Link to="/play">
-            <Button variantColor="black" variant="link">Play</Button>
+            <Button variantColor="yellow" variant="link">Play</Button>
           </Link>
           <Link to="/about">
-            <Button variantColor="black" variant="link">About</Button>
+            <Button variantColor="yellow" variant="link">About</Button>
           </Link>
           <Link to="/blog">
-            <Button variantColor="black" variant="link">Blog</Button>
+            <Button variantColor="yellow" variant="link">Blog</Button>
           </Link>
           <Link to="/contact">
-            <Button variantColor="black" variant="link">Contact</Button>
+            <Button variantColor="yellow" variant="link">Contact</Button>
           </Link>
         </FooterPageLinks>
 
@@ -89,11 +90,8 @@ const Footer = function() {
           <a title="instagram" href="https://instagram.com">
             <SocialIcon src={instagram} alt="Instagram" />
           </a>
-          <a title="vimeo" href="https://vimeo.com">
-            <SocialIcon src={vimeo} alt="Vimeo" />
-          </a>
           <a
-            ti15e="github"
+            title="github"
             href="https://github.com/mischa-s/wiha"
             target="_blank"
             rel="noopener noreferrer"

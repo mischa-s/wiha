@@ -9,6 +9,9 @@ import theme from "../theme/theme";
 import styled from "@emotion/styled";
 
 const MinHeightForTemplate = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
 `;
 

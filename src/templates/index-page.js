@@ -49,13 +49,14 @@ export const IndexPageTemplate = ({
           as="h2"
           mb="4"
           size="lg"
-          bg="brightYellow"
+          bg="blackAlpha.800"
+          color="brightYellow"
           p={2}
           w="fit-content"
         >
           {title}
         </Heading>
-        <Heading as="h3" size="md" bg="brightYellow" p={2} w="fit-content">
+        <Heading as="h3" size="md" color="brightYellow" bg="blackAlpha.800" p={2} w="fit-content">
           {subheading}
         </Heading>
       </Hero>

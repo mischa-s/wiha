@@ -25,6 +25,7 @@ const NavLogo = styled.img`
   min-height: 125px;
   height: 125px;
   margin-top: 25px;
+  position: relative;
 `
 
 const NavItems = styled.div`
