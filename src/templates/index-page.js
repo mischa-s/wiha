@@ -31,7 +31,7 @@ function LinkRenderer(props) {
 }
 
 function ImageRenderer(props) {
-  return <MarkdownImageStyle>{props.children}</MarkdownImageStyle>;
+  return <MarkdownImageStyle src={props.src}/>
 }
 
 export const IndexPageTemplate = ({
