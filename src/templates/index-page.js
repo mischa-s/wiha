@@ -18,8 +18,7 @@ export const IndexPageTemplate = ({
 }) => {
   const Hero = styled.div`
     display: flex;
-    height: 350px;
-    line-height: 1;
+    height: 18em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -28,6 +27,14 @@ export const IndexPageTemplate = ({
     background-attachment: fixed
     backgroundImage: url(${image})
   `;
+
+  const IntroBlurb = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em;
+  `
   return (
     <div>
       <Hero
@@ -38,63 +45,39 @@ export const IndexPageTemplate = ({
           })`
         }}
       >
-        <Heading as="h2" mb="4" size="lg" bg="rgb(254, 240, 1)" p={2} w="fit-content">
+        <Heading
+          as="h2"
+          mb="4"
+          size="lg"
+          bg="brightYellow"
+          p={2}
+          w="fit-content"
+        >
           {title}
         </Heading>
-        <Heading as="h3" size="md" bg="rgb(254, 240, 1)" p={2} w="fit-content">
+        <Heading as="h3" size="md" bg="brightYellow" p={2} w="fit-content">
           {subheading}
         </Heading>
       </Hero>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
-                  </div>
-                  <div className="columns">
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3>
-                      <p>{description}</p>
-                    </div>
-                  </div>
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <Link to="/products">
-                        <Button variantColor="wiha" variant="outline">
-                          See all products
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
-                    </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link to="/blog">
-                        <Button variantColor="wiha" variant="outline">
-                          Read More
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <IntroBlurb>
+        <Heading as="h4" size="md" p={2} w="fit-content">
+          {mainpitch.title}        
+        </Heading>
+        <Heading as="h5" size="sm" p={2} w="fit-content">
+          {mainpitch.description}
+        </Heading>
+        <Heading as="h4" size="md" p={2} w="fit-content">
+          {heading}
+        </Heading>
+        <p>{description}</p>
+        <h3>Latest stories</h3>
+        <BlogRoll />
+        <Link to="/blog">
+          <Button variantColor="wiha" variant="outline">
+            Read More
+          </Button>
+        </Link>
+      </IntroBlurb>
     </div>
   );
 };

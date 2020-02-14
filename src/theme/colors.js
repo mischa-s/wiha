@@ -3,6 +3,8 @@ const colors = {
   current: "currentColor",
   black: "#000",
   white: "#fff",
+  brightYellow:  "#FEF001",
+
   wiha: {
     50: "#faf9e3",
     100: "#ece9c2",
