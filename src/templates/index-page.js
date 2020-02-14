@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { Button } from "@chakra-ui/core";
 import { Heading } from "@chakra-ui/core";
+import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
@@ -34,7 +35,7 @@ export const IndexPageTemplate = ({
     align-items: center;
     flex-direction: column;
     margin: 2em;
-  `
+  `;
   return (
     <div>
       <Hero
@@ -56,16 +57,25 @@ export const IndexPageTemplate = ({
         >
           {title}
         </Heading>
-        <Heading as="h3" size="md" color="brightYellow" bg="blackAlpha.800" p={2} w="fit-content">
+        <Heading
+          as="h3"
+          size="md"
+          color="brightYellow"
+          bg="blackAlpha.800"
+          p={2}
+          w="fit-content"
+        >
           {subheading}
         </Heading>
       </Hero>
       <IntroBlurb>
         <Heading as="h4" size="md" p={2} w="fit-content">
-          {mainpitch.title}        
+          {mainpitch.title}
         </Heading>
         <Heading as="h5" size="sm" p={2} w="fit-content">
-          {mainpitch.description}
+          <p>
+            <ReactMarkdown source={mainpitch.description} />
+          </p>
         </Heading>
         <Heading as="h4" size="md" p={2} w="fit-content">
           {heading}
@@ -74,9 +84,7 @@ export const IndexPageTemplate = ({
         <h3>Latest stories</h3>
         <BlogRoll />
         <Link to="/blog">
-          <Button variant="outline">
-            Read More
-          </Button>
+          <Button variant="outline">Read More</Button>
         </Link>
       </IntroBlurb>
     </div>
