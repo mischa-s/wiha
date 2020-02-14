@@ -50,16 +50,16 @@ function Navbar() {
           <div id="navMenu">
             <NavItems>
               <Link to="/play">
-                <Button size="lg" >Play</Button>
+                <Button variantColor="blackAlpha" size="lg" >Play</Button>
               </Link>
               <Link to="/about">
-                <Button size="lg" >About</Button>
+                <Button variantColor="blackAlpha" size="lg" >About</Button>
               </Link>
               <Link to="/blog">
-                <Button size="lg" >Blog</Button>
+                <Button variantColor="blackAlpha" size="lg" >Blog</Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" >Contact</Button>
+                <Button variantColor="blackAlpha" size="lg" >Contact</Button>
               </Link>
             </NavItems>
           </div>

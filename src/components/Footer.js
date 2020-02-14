@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "@emotion/styled";
 import { Button } from "@chakra-ui/core";
-import { Flex } from "@chakra-ui/core";
 
 import logo from "../img/logo-horizontal.png";
 import facebook from "../img/social/facebook.svg";
@@ -64,19 +63,19 @@ const Footer = function() {
       <LinksWrapper>
         <FooterPageLinks>
           <Link to="/">
-            <Button variant="link">Home</Button>
+            <Button variantColor="black" variant="link">Home</Button>
           </Link>
           <Link to="/play">
-            <Button variant="link">Play</Button>
+            <Button variantColor="black" variant="link">Play</Button>
           </Link>
           <Link to="/about">
-            <Button variant="link">About</Button>
+            <Button variantColor="black" variant="link">About</Button>
           </Link>
           <Link to="/blog">
-            <Button variant="link">Blog</Button>
+            <Button variantColor="black" variant="link">Blog</Button>
           </Link>
           <Link to="/contact">
-            <Button variant="link">Contact</Button>
+            <Button variantColor="black" variant="link">Contact</Button>
           </Link>
         </FooterPageLinks>
 
