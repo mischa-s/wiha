@@ -1,7 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { IndexPageTemplate } from "../../templates/index-page";
-import WrapRootElement from "../components/WrapWithTheme";
+import { ThemeProvider, ColorModeProvider, CSSReset } from "@chakra-ui/core";
+import theme from "../../theme/theme";
+
+const WrapRootElement = ({ element }) => (
+  <ThemeProvider theme={theme}>
+    <ColorModeProvider>
+      <CSSReset />
+      {element}
+    </ColorModeProvider>
+  </ThemeProvider>
+);
+
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();

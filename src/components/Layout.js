@@ -1,20 +1,25 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import useSiteMetadata from "./SiteMetadata";
-import { withPrefix } from "gatsby";
-import styled from "@emotion/styled";
-
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import WrapRootElement from "../components/WrapWithTheme";
+import useSiteMetadata from "./SiteMetadata";
+import { withPrefix } from "gatsby";
+import { ThemeProvider, ColorModeProvider, CSSReset } from "@chakra-ui/core";
+import theme from "../theme/theme";
+import styled from "@emotion/styled";
 
 const MinHeightForTemplate = styled.div`
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 `;
 
+const WrapRootElement = ({ element }) => (
+  <ThemeProvider theme={theme}>
+    <ColorModeProvider>
+      <CSSReset />
+      {element}
+    </ColorModeProvider>
+  </ThemeProvider>
+);
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
