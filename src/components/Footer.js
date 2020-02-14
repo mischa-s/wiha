@@ -64,19 +64,19 @@ const Footer = function() {
       <LinksWrapper>
         <FooterPageLinks>
           <Link to="/">
-            <Button variantColor="black" variant="link">Home</Button>
+            <Button variant="link">Home</Button>
           </Link>
           <Link to="/play">
-            <Button variantColor="black" variant="link">Play</Button>
+            <Button variant="link">Play</Button>
           </Link>
           <Link to="/about">
-            <Button variantColor="black" variant="link">About</Button>
+            <Button variant="link">About</Button>
           </Link>
           <Link to="/blog">
-            <Button variantColor="black" variant="link">Blog</Button>
+            <Button variant="link">Blog</Button>
           </Link>
           <Link to="/contact">
-            <Button variantColor="black" variant="link">Contact</Button>
+            <Button variant="link">Contact</Button>
           </Link>
         </FooterPageLinks>
 
