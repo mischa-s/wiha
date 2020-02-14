@@ -73,7 +73,7 @@ export const IndexPageTemplate = ({
         <h3>Latest stories</h3>
         <BlogRoll />
         <Link to="/blog">
-          <Button variantColor="wiha" variant="outline">
+          <Button variant="outline">
             Read More
           </Button>
         </Link>
