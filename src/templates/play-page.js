@@ -64,6 +64,10 @@ export const PlayPageQuery = graphql`
       frontmatter {
         title
         intro {
+          blurbs {
+            image
+            text
+          }
           heading
           description
         }
