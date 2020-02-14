@@ -44,8 +44,8 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image, required: false}
           - {label: Subheading, name: subheading, widget: string}
+          - {label: Image, name: image, widget: image, required: false}
           - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: markdown}]}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: markdown}
