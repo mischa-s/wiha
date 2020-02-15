@@ -14,12 +14,31 @@ const IntroBlurb = styled.section`
   flex-direction: column;
   width: 50em;
   align-items: left;
+  max-width: 100%;
   margin: 2em auto;
+`;
+
+const SecondaryHeroInner = styled.section`
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 50em;
+  min-width: 10em;
+  align-items: left;
+  margin: 2em auto;
+  color: white;
+  padding: 5em;
+  border: 2px solid yellow;
 `;
 
 const MarkdownImageStyle = styled.img`
   height: 25em;
   margin: 1em auto;
+`;
+
+const SecondaryHero = styled.div`
+  padding: 2em;
+  background: rgba(0, 0, 0, 0.85);
 `;
 
 const MarkdownLinkStyle = styled.a`
@@ -87,18 +106,32 @@ export const IndexPageTemplate = ({
         </Heading>
       </Hero>
       <IntroBlurb>
-        <Heading as="h4" size="md" textAlign={"center"} my={2}>
+        <Heading as="h4" size="lg" fontWeight={500} textAlign={"center"} my={5}>
           {mainpitch.title}
         </Heading>
         <ReactMarkdown
           renderers={{ link: LinkRenderer, image: ImageRenderer }}
           source={mainpitch.description}
         />
-        <Heading as="h4" size="md" textAlign={"center"} my={2}>
-          {heading}
-        </Heading>
-        <p>{description}</p>
-        <Heading as="h4" size="md" textAlign={"center"} my={2}>
+      </IntroBlurb>
+      {(heading || description) && (
+          <SecondaryHero>
+            <SecondaryHeroInner>
+              <Heading
+                as="h4"
+                size="lg"
+                fontWeight={500}
+                textAlign={"center"}
+                my={5}
+              >
+                {heading}
+              </Heading>
+              <p>{description}</p>
+            </SecondaryHeroInner>
+          </SecondaryHero>
+        )}
+      <IntroBlurb>
+        <Heading as="h4" size="lg" fontWeight={500} textAlign={"center"} my={5}>
           Latest updates
         </Heading>
         <BlogRoll />
