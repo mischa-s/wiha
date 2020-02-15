@@ -14,6 +14,11 @@ intro:
         **A real person**
 
         Some people are just logos
+    - image: 'https://res.cloudinary.com/wiha/image/upload/v1579286543/logo_ptyjof.png'
+      text: |-
+        **This one is wrapped around**
+
+        And definitely isn't a duplicate
   description: The board is a volunteer board
   heading: The board
 ---
