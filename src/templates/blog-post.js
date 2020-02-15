@@ -45,7 +45,7 @@ export function BlogPostTemplate({
       {helmet || ""}
       <div>
         <Heading
-          as="h2"
+          as="h1"
           mb="5"
           size="xl"
           bg="blackAlpha.800"
@@ -54,7 +54,7 @@ export function BlogPostTemplate({
         >
           {title}
         </Heading>
-        <Heading as="h3" mb="5" size="md">
+        <Heading as="h2" mb="5" size="md">
           {description}
         </Heading>
         <PostContent content={content} />

@@ -26,41 +26,31 @@ const NavLogo = styled.img`
   height: 125px;
   margin-top: 25px;
   position: relative;
-`
+`;
 
 const NavItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-`
+`;
 
-function Navbar() {
+export default function Navbar() {
+
   return (
     <nav role="navigation" aria-label="main-navigation">
       <NavbarWrapper>
         <NavBarContent>
           <div>
             <Link to="/" title="Logo">
-              <NavLogo
-                src={logo}
-                alt="WIHA"
-              />
+              <NavLogo src={logo} alt="WIHA" />
             </Link>
           </div>
           <div id="navMenu">
             <NavItems>
-              <Link to="/play">
-                <Button variantColor="blackAlpha" size="lg" >Play</Button>
-              </Link>
-              <Link to="/about">
-                <Button variantColor="blackAlpha" size="lg" >About</Button>
-              </Link>
-              <Link to="/blog">
-                <Button variantColor="blackAlpha" size="lg" >Blog</Button>
-              </Link>
-              <Link to="/contact">
-                <Button variantColor="blackAlpha" size="lg" >Contact</Button>
-              </Link>
+              <NavButton link={"/play"} text={"Play"} />
+              <NavButton link={"/about"} text={"About"} />
+              <NavButton link={"/blog"} text={"Blog"} />
+              <NavButton link={"/contact"} text={"Contact"} />
             </NavItems>
           </div>
         </NavBarContent>
@@ -69,4 +59,16 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+function NavButton({ link, text }) {
+
+  return (
+    <Link to={link}>
+      <Button
+        variantColor={"blackAlpha"}
+        size="lg"
+      >
+        {text}
+      </Button>
+    </Link>
+  );
+}
