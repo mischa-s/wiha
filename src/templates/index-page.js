@@ -10,13 +10,24 @@ import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 
+const Hero = styled.div`
+  display: flex;
+  height: 18em;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(${props => props.image});
+`;
+
 const IntroBlurb = styled.section`
   display: flex;
   flex-direction: column;
   width: 50em;
   align-items: left;
   max-width: 100%;
-  margin: 2em auto;
+  margin: 2em auto 3em auto;
 `;
 
 const SecondaryHeroInner = styled.section`
@@ -32,9 +43,24 @@ const SecondaryHeroInner = styled.section`
   border: 2px solid yellow;
 `;
 
-const MarkdownImageStyle = styled.img`
-  height: 25em;
+const FlexedMarkdown = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 1em auto;
+`;
+
+const MarkdownImageStyle = styled.img`
+  width: 80%;
+  margin: .5em auto;
+  flex-grow: 1
+`;
+
+const MarkdownParagraphStyle = styled.p`
+  width: 50%;
+  padding: .5em 0;
+  margin: auto 0;
+  flex-grow: 1
 `;
 
 const SecondaryHero = styled.div`
@@ -47,7 +73,11 @@ const MarkdownLinkStyle = styled.a`
 `;
 
 function LinkRenderer(props) {
-  return <MarkdownLinkStyle>{props.children}</MarkdownLinkStyle>;
+  return <MarkdownLinkStyle href={props.href}>{props.children}</MarkdownLinkStyle>;
+}
+
+function ParagraphRenderer(props) {
+  return <MarkdownParagraphStyle>{props.children}</MarkdownParagraphStyle>;
 }
 
 function ImageRenderer(props) {
@@ -62,27 +92,16 @@ export const IndexPageTemplate = ({
   mainpitch,
   description
 }) => {
-  const Hero = styled.div`
-  display: flex;
-  height: 18em;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed
-  backgroundImage: url(${image})
-  `;
-
   return (
     <>
       <Hero
-        style={{
-          backgroundImage: `url(${
-            image
-            // !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`
-        }}
+        image={image}
+        // style={{
+        //   backgroundImage: `url(${
+        //     image
+        //     // !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        //   })`
+        // }}
       >
         <Heading
           as="h2"
@@ -107,13 +126,25 @@ export const IndexPageTemplate = ({
         </Heading>
       </Hero>
       <IntroBlurb>
-        <Heading as="h4" size="lg" fontWeight={500} textAlign={"center"} my={5}>
+        <Heading
+          as="h4"
+          size="lg"
+          fontWeight={500}
+          textAlign={"center"}
+          my={5}
+        >
           {mainpitch.title}
         </Heading>
-        <ReactMarkdown
-          renderers={{ link: LinkRenderer, image: ImageRenderer }}
-          source={mainpitch.description}
-        />
+        <FlexedMarkdown>
+          <ReactMarkdown
+            renderers={{
+              link: LinkRenderer,
+              image: ImageRenderer,
+              paragraph: ParagraphRenderer
+            }}
+            source={mainpitch.description}
+          />
+        </FlexedMarkdown>
       </IntroBlurb>
       {(heading || description) && (
         <SecondaryHero>
@@ -136,7 +167,7 @@ export const IndexPageTemplate = ({
           Latest updates
         </Heading>
         <BlogRoll />
-        <Flex justify={'center'}>
+        <Flex justify={"center"}>
           <Link to="/blog">
             <Button variant="outline">Read More</Button>
           </Link>
