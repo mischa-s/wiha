@@ -4,7 +4,16 @@ title: Wellington Ice Hockey Association
 intro:
   blurbs:
     - image: 'https://res.cloudinary.com/wiha/image/upload/v1579286543/logo_ptyjof.png'
-      text: Add a team member
+      text: |-
+        **A person has a name**
+
+        As well as short bit about who they truly are.
+    - image: >-
+        https://res.cloudinary.com/wiha/image/upload/v1581753474/cheese-cutter_wy8jyb.jpg
+      text: |-
+        **A real person**
+
+        Some people are just logos
   description: The board is a volunteer board
   heading: The board
 ---
