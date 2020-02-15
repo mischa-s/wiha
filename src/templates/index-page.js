@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { Button } from "@chakra-ui/core";
 import { Heading } from "@chakra-ui/core";
+import { Flex } from "@chakra-ui/core";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
@@ -115,29 +116,31 @@ export const IndexPageTemplate = ({
         />
       </IntroBlurb>
       {(heading || description) && (
-          <SecondaryHero>
-            <SecondaryHeroInner>
-              <Heading
-                as="h4"
-                size="lg"
-                fontWeight={500}
-                textAlign={"center"}
-                my={5}
-              >
-                {heading}
-              </Heading>
-              <p>{description}</p>
-            </SecondaryHeroInner>
-          </SecondaryHero>
-        )}
+        <SecondaryHero>
+          <SecondaryHeroInner>
+            <Heading
+              as="h4"
+              size="lg"
+              fontWeight={500}
+              textAlign={"center"}
+              my={5}
+            >
+              {heading}
+            </Heading>
+            <p>{description}</p>
+          </SecondaryHeroInner>
+        </SecondaryHero>
+      )}
       <IntroBlurb>
         <Heading as="h4" size="lg" fontWeight={500} textAlign={"center"} my={5}>
           Latest updates
         </Heading>
         <BlogRoll />
-        <Link to="/blog">
-          <Button variant="outline">Read More</Button>
-        </Link>
+        <Flex justify={'center'}>
+          <Link to="/blog">
+            <Button variant="outline">Read More</Button>
+          </Link>
+        </Flex>
       </IntroBlurb>
     </>
   );

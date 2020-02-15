@@ -1,49 +1,88 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import styled from "@emotion/styled";
+import { Button } from "@chakra-ui/core";
+import { Divider } from "@chakra-ui/core";
+import { List, ListItem } from "@chakra-ui/core";
+import { Flex } from "@chakra-ui/core";
+import { Heading } from "@chakra-ui/core";
 
-export const BlogPostTemplate = ({
+import Content, { HTMLContent } from "../components/Content";
+import Layout from "../components/Layout";
+
+const ContentWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 50em;
+  align-items: left;
+  max-width: 100%;
+  margin: 2em auto;
+
+  p {
+    padding: 0.75em 0;
+  }
+`;
+
+const TagWrapper = styled.div`
+  margin: 2em auto;
+`;
+
+export function BlogPostTemplate({
   content,
   contentComponent,
   description,
   tags,
   title,
-  helmet,
-}) => {
-  const PostContent = contentComponent || Content
+  helmet
+}) {
+  const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </div>
-        </div>
+    <ContentWrapper>
+      {helmet || ""}
+      <div>
+        <Heading
+          as="h2"
+          mb="5"
+          size="xl"
+          bg="blackAlpha.800"
+          color="brightYellow"
+          p={2}
+        >
+          {title}
+        </Heading>
+        <Heading as="h3" mb="5" size="md">
+          {description}
+        </Heading>
+        <PostContent content={content} />
+
+        {tags && tags.length ? (
+          <TagWrapper>
+            <h4>Tags</h4>
+            <List styleType="disc">
+              {tags.map(tag => (
+                <ListItem key={tag + `tag`}>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                </ListItem>
+              ))}
+            </List>
+          </TagWrapper>
+        ) : null}
       </div>
-    </section>
-  )
+      <Divider my={6} />
+      <Flex justify={"space-between"}>
+        <Link to="/">
+          <Button variant="link">Back to blog</Button>
+        </Link>
+        <Link to="/blog">
+          <Button variant="link">Back to home</Button>
+        </Link>
+      </Flex>
+    </ContentWrapper>
+  );
 }
 
 BlogPostTemplate.propTypes = {
@@ -51,11 +90,11 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object,
-}
+  helmet: PropTypes.object
+};
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -76,16 +115,16 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
-  )
-}
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+    markdownRemark: PropTypes.object
+  })
+};
 
-export default BlogPost
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
@@ -100,4 +139,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
