@@ -16,14 +16,7 @@ mainpitch:
     numquam quia. Natus dolores perspiciatis et exercitationem possimus.
 
 
-    Rem ut incidunt dolorum officiis. Id qui rerum eveniet quidem maxime qui
-    magnam consectetur. Suscipit commodi libero enim et eligendi ut et quo.
-    Error porro odio ducimus alias excepturi ea non. Sapiente velit aliquam
-    consequatur vitae est exercitationem.
-
-
-    Ea aspernatur hic sapiente nemo. Harum ea dolorem sequi quam molestiae.
-    Beatae maxime quia earum.
+    ![](https://res.cloudinary.com/wiha/image/upload/v1581635370/IMG_3183_jhoftu.jpg)
 
 
     Cupiditate et aut velit vel magni. Non maxime consequuntur accusantium
