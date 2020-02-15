@@ -28,11 +28,6 @@ mainpitch:
     Cupiditate et aut velit vel magni. Non maxime consequuntur accusantium
     voluptatem quia tempore non quas. Voluptatum ipsa quasi nulla et delectus.
     Aut quia officia et adipisci nobis optio aliquam enim.
-
-
-    Accusantium hic non vero officiis quidem sed cupiditate et. Perspiciatis
-    dolores minima accusamus sapiente eos. Necessitatibus sunt expedita dolores
-    reprehenderit consequatur sint voluptatem. Sint qui sint ullam aliquid.
 heading: Some more information could go below
 description: >-
   Description needs some details Description needs some details Description
