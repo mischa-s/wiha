@@ -6,11 +6,11 @@ image: 'https://res.cloudinary.com/wiha/image/upload/v1581635370/IMG_3183_jhoftu
 mainpitch:
   title: Join the team!
   description: >-
-    Thats the spirit! [Play some hockey ](/play) 
+    Thats the spirit! [Play some hockey ](/play)
 
 
     ![](https://res.cloudinary.com/wiha/image/upload/v1581723650/wellington-hockey_nydx3z.jpg)
-heading: What else should we include
-description: Description needs some details
+heading: Some more information could go below Some more information could go below Some more information could go below
+description: Description needs some details Description needs some details Description needs some details Description needs some details Description needs some details Description needs some details Description needs some details Description needs some details Description needs some details Description needs some details Description needs some details Description needs some details
 ---
 

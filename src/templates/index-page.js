@@ -9,17 +9,22 @@ import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 
+const IntroStyleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 50em;
+  align-items: left;
+  margin: auto;
+`;
 const IntroBlurb = styled.section`
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin: 2em;
 `;
 
 const MarkdownImageStyle = styled.img`
-  width: 25em;
-  margin: 1rem auto;
+  height: 25em;
+  margin: 1em auto;
 `;
 
 const MarkdownLinkStyle = styled.a`
@@ -31,7 +36,7 @@ function LinkRenderer(props) {
 }
 
 function ImageRenderer(props) {
-  return <MarkdownImageStyle src={props.src}/>
+  return <MarkdownImageStyle src={props.src} />;
 }
 
 export const IndexPageTemplate = ({
@@ -55,7 +60,7 @@ export const IndexPageTemplate = ({
   `;
 
   return (
-    <div>
+    <>
       <Hero
         style={{
           backgroundImage: `url(${
@@ -86,27 +91,29 @@ export const IndexPageTemplate = ({
           {subheading}
         </Heading>
       </Hero>
-      <IntroBlurb>
-        <Heading as="h4" size="md" p={2} w="fit-content">
-          {mainpitch.title}
-        </Heading>
-        <Heading as="h5" size="sm" p={2} w="fit-content">
+      <IntroStyleWrapper>
+        <IntroBlurb>
+          <Heading as="h4" size="md" textAlign={'center'} my={2}>
+            {mainpitch.title}
+          </Heading>
           <ReactMarkdown
             renderers={{ link: LinkRenderer, image: ImageRenderer }}
             source={mainpitch.description}
           />
-        </Heading>
-        <Heading as="h4" size="md" p={2} w="fit-content">
-          {heading}
-        </Heading>
-        <p>{description}</p>
-        <h3>Latest stories</h3>
-        <BlogRoll />
-        <Link to="/blog">
-          <Button variant="outline">Read More</Button>
-        </Link>
-      </IntroBlurb>
-    </div>
+          <Heading as="h4" size="md" textAlign={'center'} my={2}>
+            {heading}
+          </Heading>
+          <p>{description}</p>
+          <Heading as="h4" size="md" textAlign={'center'} my={2}>
+            Latest updates
+          </Heading>
+          <BlogRoll />
+          <Link to="/blog">
+            <Button variant="outline">Read More</Button>
+          </Link>
+        </IntroBlurb>
+      </IntroStyleWrapper>
+    </>
   );
 };
 
