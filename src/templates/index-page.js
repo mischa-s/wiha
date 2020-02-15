@@ -14,7 +14,7 @@ const IntroBlurb = styled.section`
   flex-direction: column;
   width: 50em;
   align-items: left;
-  margin: auto;
+  margin: 2em auto;
 `;
 
 const MarkdownImageStyle = styled.img`
