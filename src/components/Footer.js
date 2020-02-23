@@ -18,6 +18,7 @@ const Footer = function() {
     background: black;
   `;
 
+  // width: 100%
   const SocialLinks = styled.div`
     display: flex;
     justify-content: space-between;
@@ -53,7 +54,7 @@ const Footer = function() {
     margin-top: .75em;
     margin-bottom: .5em;
     width: 50%;
-    min-width: 26em;
+    min-width: 23em;
     border: 2px solid #fef001;
     justify-content: space-between;
   `;
