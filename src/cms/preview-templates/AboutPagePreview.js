@@ -18,8 +18,10 @@ const ThemeWrapper = ({ element }) => (
   </ThemeProvider>
 );
 
-const AboutPagePreview = ({ entry, widgetFor }) => {
+const AboutPagePreview = ({ entry }) => {
   const entryBlurbs = entry.getIn(["data", "intro", "blurbs"]);
+  const heading = entry.getIn(["data", "intro", "heading"]);
+  const description = entry.getIn(["data", "intro", "description"]);
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : [];
 
   return (
@@ -27,8 +29,7 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
       element={
         <AboutPageTemplate
           title={entry.getIn(["data", "title"])}
-          content={widgetFor("body")}
-          intro={{ blurbs }}
+          intro={{ blurbs, heading, description }}
         />
       }
     />
@@ -39,7 +40,6 @@ AboutPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
   }),
-  widgetFor: PropTypes.func
 };
 
 export default AboutPagePreview;

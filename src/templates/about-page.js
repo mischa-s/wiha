@@ -8,7 +8,6 @@ import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import Content, { HTMLContent } from "../components/Content";
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -23,8 +22,7 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export function AboutPageTemplate({ title, content, contentComponent, intro }) {
-  const PageContent = contentComponent || Content;
+export function AboutPageTemplate({ title, intro }) {
 
   return (
     <ContentWrapper>
@@ -38,7 +36,6 @@ export function AboutPageTemplate({ title, content, contentComponent, intro }) {
       >
         {title}
       </Heading>
-      <PageContent content={content} />
       <Heading as="h2" my="3" size="lg">
         {intro.heading}
       </Heading>
@@ -63,9 +60,7 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <AboutPageTemplate
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.html}
         intro={post.frontmatter.intro}
       />
     </Layout>
