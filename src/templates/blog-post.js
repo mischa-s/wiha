@@ -34,6 +34,7 @@ export function BlogPostTemplate({
   content,
   contentComponent,
   description,
+  date,
   tags,
   title,
   helmet
@@ -56,6 +57,9 @@ export function BlogPostTemplate({
         </Heading>
         <Heading as="h2" mb="5" size="md">
           {description}
+        </Heading>
+        <Heading as="h5" mb="5" size="sm">
+          {date}
         </Heading>
         <PostContent content={content} />
 
@@ -102,6 +106,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        date={post.frontmatter.date}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>

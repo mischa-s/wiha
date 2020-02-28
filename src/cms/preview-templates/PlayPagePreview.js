@@ -18,7 +18,7 @@ const ThemeWrapper = ({ element }) => (
   </ThemeProvider>
 );
 
-const PlayPagePreview = ({ entry, widgetFor }) => {
+const PlayPagePreview = ({ entry }) => {
   const entryBlurbs = entry.getIn(["data", "intro", "blurbs"]);
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : [];
 
@@ -27,7 +27,6 @@ const PlayPagePreview = ({ entry, widgetFor }) => {
       element={
         <PlayPageTemplate
           title={entry.getIn(["data", "title"])}
-          content={widgetFor("body")}
           intro={{ blurbs }}
         />
       }
@@ -38,8 +37,7 @@ const PlayPagePreview = ({ entry, widgetFor }) => {
 PlayPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
-  }),
-  widgetFor: PropTypes.func
+  })
 };
 
 export default PlayPagePreview;

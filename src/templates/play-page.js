@@ -1,65 +1,77 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Features from "../components/Features";
+import styled from "@emotion/styled";
+import { Flex } from "@chakra-ui/core";
+import { Button } from "@chakra-ui/core";
+import { Heading } from "@chakra-ui/core";
 
-export const PlayPageTemplate = ({ title, content, contentComponent, intro }) => {
-  const PageContent = contentComponent || Content
+const ContentWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 50em;
+  align-items: left;
+  max-width: 100%;
+  margin: 2em auto;
 
+  p {
+    padding: 0.75em 0;
+  }
+`;
+
+export const PlayPageTemplate = ({ title, intro }) => {
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-              {intro && <Features gridItems={intro.blurbs} /> }
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
+    <ContentWrapper>
+      <Heading
+        as="h1"
+        mb="5"
+        size="xl"
+        bg="blackAlpha.800"
+        color="brightYellow"
+        p={2}
+      >
+        Play
+      </Heading>
+
+      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+        {title}
+      </h2>
+      {intro && <Features gridItems={intro.blurbs} />}
+    </ContentWrapper>
+  );
+};
 
 PlayPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-}
+    blurbs: PropTypes.array
+  })
+};
 
 const PlayPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
       <PlayPageTemplate
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.html}
         intro={post.frontmatter.intro}
       />
     </Layout>
-  )
-}
+  );
+};
 
 PlayPage.propTypes = {
-  data: PropTypes.object.isRequired,
-}
+  data: PropTypes.object.isRequired
+};
 
-export default PlayPage
+export default PlayPage;
 
 export const PlayPageQuery = graphql`
   query PlayPage($id: String!) {
-    markdownRemark(id: {eq: $id}) {
+    markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
@@ -74,4 +86,4 @@ export const PlayPageQuery = graphql`
       }
     }
   }
-`
+`;
