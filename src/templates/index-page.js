@@ -169,7 +169,7 @@ export const IndexPageTemplate = ({
         <BlogRoll />
         <Flex justify={"center"}>
           <Link to="/blog">
-            <Button variant="outline">Read More</Button>
+            <Button size="lg" variant="outline">Read More</Button>
           </Link>
         </Flex>
       </IntroBlurb>
