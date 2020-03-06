@@ -18,7 +18,6 @@ const Footer = function() {
     background: black;
   `;
 
-  // width: 100%
   const SocialLinks = styled.div`
     display: flex;
     justify-content: space-between;
