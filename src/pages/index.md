@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: The Home of Wellington Hockey The best sport ever
-subheading: If its not on ice you're doing it wrong
+title: The Home of Wellington Ice Hockey
+subheading: The fastest sport in the capital
 image: 'https://res.cloudinary.com/wiha/image/upload/v1581635370/IMG_3183_jhoftu.jpg'
 mainpitch:
   title: Join the team!
