@@ -1,11 +1,8 @@
 ---
 templateKey: play-page
-title: Wellington Ice Hockey Association
-mainText: >-
-  The Wellington Ice Hockey Association ice hockey leagues and programs and is
-  run by a volunteer board. This is it
+title: Play!
 details:
-  description: The board is a volunteer board
-  heading: The board
+  description: You can play hockey in lots of different ways
+  heading: 'Play hockey '
 ---
 
