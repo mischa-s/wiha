@@ -2,11 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import styled from "@emotion/styled";
-import { Flex } from "@chakra-ui/core";
-import { Button } from "@chakra-ui/core";
 import { Heading } from "@chakra-ui/core";
+import { Text } from "@chakra-ui/core";
+import ReactMarkdown from "react-markdown";
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -21,7 +20,9 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export const PlayPageTemplate = ({ title, intro }) => {
+export const PlayPageTemplate = ({ title, details }) => {
+  const { heading, description } = details;
+
   return (
     <ContentWrapper>
       <Heading
@@ -32,22 +33,20 @@ export const PlayPageTemplate = ({ title, intro }) => {
         color="brightYellow"
         p={2}
       >
-        Play
+        {title}
       </Heading>
 
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-        {title}
+        {heading}
       </h2>
-      {intro && <Features gridItems={intro.blurbs} />}
+      <Text mb="5" fontSize="lg"><ReactMarkdown source={description} /></Text>
     </ContentWrapper>
   );
 };
 
 PlayPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array
-  })
+  details: PropTypes.object
 };
 
 const PlayPage = ({ data }) => {
@@ -57,7 +56,7 @@ const PlayPage = ({ data }) => {
     <Layout>
       <PlayPageTemplate
         title={post.frontmatter.title}
-        intro={post.frontmatter.intro}
+        details={post.frontmatter.details}
       />
     </Layout>
   );
@@ -72,14 +71,9 @@ export default PlayPage;
 export const PlayPageQuery = graphql`
   query PlayPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
-        intro {
-          blurbs {
-            image
-            text
-          }
+        details {
           heading
           description
         }

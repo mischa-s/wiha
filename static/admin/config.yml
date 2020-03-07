@@ -63,4 +63,4 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "play-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Team, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}, {label: Team Members, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image, required: false}, {label: Text, name: text, widget: markdown}]}]}
+          - {label: Details, name: details, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}]}

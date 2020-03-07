@@ -19,15 +19,16 @@ const ThemeWrapper = ({ element }) => (
 );
 
 const PlayPagePreview = ({ entry }) => {
-  const entryBlurbs = entry.getIn(["data", "intro", "blurbs"]);
-  const blurbs = entryBlurbs ? entryBlurbs.toJS() : [];
+  console.log(entry)
+  const heading = entry.getIn(["data", "details", "heading"]);
+  const description = entry.getIn(["data", "details", "description"]);
 
   return (
     <ThemeWrapper
       element={
         <PlayPageTemplate
           title={entry.getIn(["data", "title"])}
-          intro={{ blurbs }}
+          details={{ heading, description }}
         />
       }
     />
