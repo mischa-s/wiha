@@ -6,6 +6,48 @@ import styled from "@emotion/styled";
 import { Heading } from "@chakra-ui/core";
 import { Text } from "@chakra-ui/core";
 import ReactMarkdown from "react-markdown";
+import useGoogleSpreadsheet from "../lib/use-google-spreadsheet";
+
+const Stats = ({}) => {
+  const API_KEY = "AIzaSyDWtp4gWd-POH7YFbZIt5YiO4myypwc-vg";
+  const shareUrl =
+    "https://sheets.googleapis.com/v4/spreadsheets/1F5Dr7jXlgCGaa9Ei5SSMP_calnmB4j-EK8k4QrLIjaQ?key=AIzaSyDWtp4gWd-POH7YFbZIt5YiO4myypwc-vg";
+  const { rows, isFetching } = useGoogleSpreadsheet(shareUrl, API_KEY);
+  return isFetching ? (
+    <div>Loading...</div>
+  ) : rows ? (
+    <table>
+      <thead>
+        <tr>
+          {rows[0].map((header, i) => {
+            return (
+              <th key={i}>
+                {header}
+              </th>
+            );
+          })}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row, i) => {
+          return i > 0 &&  (
+            <tr>
+              {row.map((column, key) => {
+                return (
+                  <td key={key}>
+                    {column}
+                  </td>
+                );
+              })}
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  ) : (
+    <span>No Data</span>
+  );
+};
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -17,6 +59,9 @@ const ContentWrapper = styled.section`
 
   p {
     padding: 0.75em 0;
+    ul {
+      list-style-position: inside;
+    }
   }
 `;
 
@@ -35,11 +80,14 @@ export const PlayPageTemplate = ({ title, details }) => {
       >
         {title}
       </Heading>
+      <Stats />
 
-      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+      {/* <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
         {heading}
       </h2>
-      <Text mb="5" fontSize="lg"><ReactMarkdown source={description} /></Text>
+      <Text mb="5" fontSize="lg">
+        <ReactMarkdown source={description} />
+      </Text> */}
     </ContentWrapper>
   );
 };
