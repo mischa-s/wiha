@@ -12,9 +12,7 @@ const useGoogleSpreadsheet = API_KEY => {
         const { data } = await axios.get(endpoint, {
           cancelToken: source.token
         });
-        // debugger
         const rows = data.valueRanges?.[0]?.values;
-        // console.log(rows)
         setState({ rows, isFetching: false });
       } catch (err) {
         setState({ rows: null, isFetching: false });

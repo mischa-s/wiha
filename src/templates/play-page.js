@@ -6,6 +6,7 @@ import styled from "@emotion/styled";
 import { Heading } from "@chakra-ui/core";
 import { Text } from "@chakra-ui/core";
 import ReactMarkdown from "react-markdown";
+import { SimpleGrid } from "@chakra-ui/core";
 import useGoogleSpreadsheet from "../lib/use-google-spreadsheet";
 
 const Stats = ({}) => {
@@ -22,7 +23,15 @@ const Stats = ({}) => {
           {rows[0].map((header, i) => {
             return (
               <th key={i}>
-                {header}
+                <Heading
+                  as="h2"
+                  mb="2"
+                  size="md"
+                  width={i > 0 ? 50 : 200}
+                  p={2}
+                >
+                  {header}
+                </Heading>
               </th>
             );
           })}
@@ -30,16 +39,28 @@ const Stats = ({}) => {
       </thead>
       <tbody>
         {rows.map((row, i) => {
-          return i > 0 &&  (
-            <tr>
-              {row.map((column, key) => {
-                return (
-                  <td key={key}>
-                    {column}
-                  </td>
-                );
-              })}
-            </tr>
+          return (
+            i > 0 && (
+              <tr>
+                {row.map((column, key) => {
+                  console.log(key > 0);
+                  return (
+                    <td key={key}>
+                      <Heading
+                        textAlign={"center"}
+                        p={2}
+                        as="h3"
+                        mb="2"
+                        width={key > 0 ? 50 : 200}
+                        fontSize="md"
+                      >
+                        {column}
+                      </Heading>
+                    </td>
+                  );
+                })}
+              </tr>
+            )
           );
         })}
       </tbody>
