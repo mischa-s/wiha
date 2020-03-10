@@ -15,15 +15,15 @@ const Table = styled.table`
   overflow-x: scroll;
 
   th {
-    background: black;
-    border: 1px solid #ddd;
-    color: #ddd;
+    background: rgba(0, 0, 0, 0.80);
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    color: #FEF001;
     text-align: center;
     text-transform: uppercase;
   }
 
   th, td {
-    border: 1px solid #ddd;
+    border: 1px solid rgba(0, 0, 0, 0.20);
     font-size: 12px;
   }
 `;
