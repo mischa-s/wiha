@@ -9,62 +9,97 @@ import ReactMarkdown from "react-markdown";
 import { SimpleGrid } from "@chakra-ui/core";
 import useGoogleSpreadsheet from "../lib/use-google-spreadsheet";
 
+const Table = styled.table`
+  width: 50em;
+  max-width: 100%;
+  overflow-x: scroll;
+
+  th {
+    background: black;
+    border: 1px solid #ddd;
+    color: #ddd;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    font-size: 12px;
+  }
+`;
+
 const Stats = ({}) => {
-  const API_KEY = "AIzaSyDWtp4gWd-POH7YFbZIt5YiO4myypwc-vg";
-  const shareUrl =
-    "https://sheets.googleapis.com/v4/spreadsheets/1F5Dr7jXlgCGaa9Ei5SSMP_calnmB4j-EK8k4QrLIjaQ?key=AIzaSyDWtp4gWd-POH7YFbZIt5YiO4myypwc-vg";
-  const { rows, isFetching } = useGoogleSpreadsheet(shareUrl, API_KEY);
+  const { valueRanges, isFetching } = useGoogleSpreadsheet();
   return isFetching ? (
     <div>Loading...</div>
-  ) : rows ? (
-    <table>
-      <thead>
-        <tr>
-          {rows[0].map((header, i) => {
-            return (
-              <th key={i}>
-                <Heading
-                  as="h2"
-                  mb="2"
-                  size="md"
-                  width={i > 0 ? 50 : 200}
-                  p={2}
-                >
-                  {header}
-                </Heading>
-              </th>
-            );
-          })}
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row, i) => {
-          return (
-            i > 0 && (
-              <tr>
-                {row.map((column, key) => {
-                  console.log(key > 0);
+  ) : valueRanges ? (
+    <>
+      {valueRanges.map((range, rangeIndex) => {
+        const { values } = range;
+        const rows =
+          rangeIndex > 0
+            ? values.map(value => [
+                value[0],
+                value[2],
+                value[4],
+                value[5],
+                value[6]
+              ])
+            : values;
+        return (
+          <>
+            <Heading as="h1" my="5" w="100%" size="lg" p={2}>
+              {rangeIndex > 0 ?  "Player Stats" : "Standings"}
+            </Heading>
+            <Table>
+              <thead>
+                <tr>
+                  {rows[0].map((header, i) => {
+                    return (
+                      <th key={`${i}-${header}`}>
+                        <Heading
+                          as="h2"
+                          mb="2"
+                          size="md"
+                          p={2}
+                        >
+                          {header}
+                        </Heading>
+                      </th>
+                    );
+                  })}
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row, i) => {
                   return (
-                    <td key={key}>
-                      <Heading
-                        textAlign={"center"}
-                        p={2}
-                        as="h3"
-                        mb="2"
-                        width={key > 0 ? 50 : 200}
-                        fontSize="md"
-                      >
-                        {column}
-                      </Heading>
-                    </td>
+                    i > 0 && (
+                      <tr>
+                        {row.map((column, key) => {
+                          return (
+                            <td key={`${key}-${column}`}>
+                              <Heading
+                                textAlign={"center"}
+                                p={2}
+                                as="h3"
+                                mb="2"
+                                fontSize="md"
+                              >
+                                {column}
+                              </Heading>
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    )
                   );
                 })}
-              </tr>
-            )
-          );
-        })}
-      </tbody>
-    </table>
+              </tbody>
+            </Table>
+          </>
+        );
+      })}
+    </>
   ) : (
     <span>No Data</span>
   );
