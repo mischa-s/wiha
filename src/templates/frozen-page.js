@@ -41,7 +41,7 @@ const Stats = ({}) => {
         const rows =
           rangeIndex > 0
             ? selectPlayerStats(values)
-            : sortTeams(values.slice(1, 5));
+            : sortTeams(values);
         return (
           <>
             <Heading as="h1" my="5" w="100%" size="lg" p={2}>
@@ -187,9 +187,9 @@ function selectPlayerStats (players) {
   ])
 }
 
-function sortTeams(teams) {
-  debugger
-  return teams.sort((a, b) => {
+function sortTeams(values) {
+  const teams =  values.slice(1, 5).sort((a, b) => {
     return b[5] === a[5] ? b[8] - a[8] : b[5] - a[5];
   });
+  return [values[0], ...teams]
 }
