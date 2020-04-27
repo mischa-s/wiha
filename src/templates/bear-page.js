@@ -23,7 +23,7 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export function PlayPageTemplate({ title, intro }) {
+export function BearLeaguePageTemplate({ title, intro }) {
   return (
     <ContentWrapper>
       <Heading
@@ -46,19 +46,19 @@ export function PlayPageTemplate({ title, intro }) {
   );
 }
 
-PlayPageTemplate.propTypes = {
+BearLeaguePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   intro: PropTypes.object,
 };
 
-const PlayPage = ({ data }) => {
+const BearLeaguePage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <PlayPageTemplate
+      <BearLeaguePageTemplate
         title={post.frontmatter.title}
         intro={post.frontmatter.intro}
       />
@@ -66,14 +66,14 @@ const PlayPage = ({ data }) => {
   );
 };
 
-PlayPage.propTypes = {
+BearLeaguePage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default PlayPage;
+export default BearLeaguePage;
 
-export const playPageQuery = graphql`
-  query PlayPage($id: String!) {
+export const bearLeaguePageQuery = graphql`
+  query BearLeaguePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { PlayPageTemplate } from "../../templates/play-page";
+import { BearPageTemplate } from "../../templates/bear-page";
 
 /* Yes this should be in a seperate file so it can be used for all the previews
 but there is something that smells like a circular dependency that happens
@@ -18,14 +18,14 @@ const ThemeWrapper = ({ element }) => (
   </ThemeProvider>
 );
 
-const PlayPagePreview = ({ entry }) => {
+const BearPagePreview = ({ entry }) => {
   const heading = entry.getIn(["data", "intro", "heading"]);
   const description = entry.getIn(["data", "intro", "description"]);
 
   return (
     <ThemeWrapper
       element={
-        <PlayPageTemplate
+        <BearLeaguePageTemplate
           title={entry.getIn(["data", "title"])}
           intro={{ heading, description }}
         />
@@ -34,10 +34,10 @@ const PlayPagePreview = ({ entry }) => {
   );
 };
 
-PlayPagePreview.propTypes = {
+BearPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
   }),
 };
 
-export default PlayPagePreview;
+export default BearPagePreview;

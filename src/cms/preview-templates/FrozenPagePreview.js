@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { PlayPageTemplate } from "../../templates/play-page";
+import { FrozenPageTemplate } from "../../templates/frozen-page";
 
 /* Yes this should be in a seperate file so it can be used for all the previews
 but there is something that smells like a circular dependency that happens
@@ -18,26 +18,26 @@ const ThemeWrapper = ({ element }) => (
   </ThemeProvider>
 );
 
-const PlayPagePreview = ({ entry }) => {
-  const heading = entry.getIn(["data", "intro", "heading"]);
-  const description = entry.getIn(["data", "intro", "description"]);
+const FrozenPagePreview = ({ entry }) => {
+  const heading = entry.getIn(["data", "details", "heading"]);
+  const description = entry.getIn(["data", "details", "description"]);
 
   return (
     <ThemeWrapper
       element={
-        <PlayPageTemplate
+        <FrozenPageTemplate
           title={entry.getIn(["data", "title"])}
-          intro={{ heading, description }}
+          details={{ heading, description }}
         />
       }
     />
   );
 };
 
-PlayPagePreview.propTypes = {
+FrozenPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
-  }),
+  })
 };
 
-export default PlayPagePreview;
+export default FrozenPagePreview;

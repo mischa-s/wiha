@@ -23,7 +23,7 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export function PlayPageTemplate({ title, intro }) {
+export function YouthPageTemplate({ title, intro }) {
   return (
     <ContentWrapper>
       <Heading
@@ -46,19 +46,19 @@ export function PlayPageTemplate({ title, intro }) {
   );
 }
 
-PlayPageTemplate.propTypes = {
+YouthPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   intro: PropTypes.object,
 };
 
-const PlayPage = ({ data }) => {
+const YouthPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <PlayPageTemplate
+      <YouthPageTemplate
         title={post.frontmatter.title}
         intro={post.frontmatter.intro}
       />
@@ -66,14 +66,14 @@ const PlayPage = ({ data }) => {
   );
 };
 
-PlayPage.propTypes = {
+YouthPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default PlayPage;
+export default YouthPage;
 
-export const playPageQuery = graphql`
-  query PlayPage($id: String!) {
+export const youthPageQuery = graphql`
+  query YouthPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

@@ -1,7 +1,7 @@
 ---
-templateKey: play-page
-title: Overview
-intro:
+templateKey: frozen-page
+title: Frozen Fours
+details:
   description: >-
     There are lots of opportunities to play hockey:
 
@@ -14,6 +14,6 @@ intro:
 
     - Sunday Evening:  Frozen Fours League - a slightly faster league for
     players with at least 1 or 2 years experience (registration required)
-  heading: The board
+  heading: 'Play hockey '
 ---
-The Wellington Ice Hockey Association ice hockey leagues and programs and is run by a volunteer board.
+

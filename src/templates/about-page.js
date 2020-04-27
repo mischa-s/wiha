@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { Heading } from "@chakra-ui/core";
 import { Text } from "@chakra-ui/core";
+
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
@@ -23,7 +24,6 @@ const ContentWrapper = styled.section`
 `;
 
 export function AboutPageTemplate({ title, intro }) {
-
   return (
     <ContentWrapper>
       <Heading
@@ -39,7 +39,9 @@ export function AboutPageTemplate({ title, intro }) {
       <Heading as="h2" my="3" size="lg">
         {intro.heading}
       </Heading>
-      <Text mb="5" fontSize="lg"><ReactMarkdown source={intro.description} /></Text>
+      <Text mb="5" fontSize="lg">
+        <ReactMarkdown source={intro.description} />
+      </Text>
       {intro && <Features gridItems={intro.blurbs} />}
     </ContentWrapper>
   );
@@ -50,8 +52,8 @@ AboutPageTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array
-  })
+    blurbs: PropTypes.array,
+  }),
 };
 
 const AboutPage = ({ data }) => {
@@ -68,7 +70,7 @@ const AboutPage = ({ data }) => {
 };
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 };
 
 export default AboutPage;
