@@ -64,7 +64,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "play-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Description, name: description, widget: markdown}}
+          - {label: Description, name: description, widget: markdown}
 
       - file: "src/pages/frozen/index.md"
         label: "Frozen Fours"
@@ -72,7 +72,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "frozen-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Description, name: description, widget: markdown}}
+          - {label: Description, name: description, widget: markdown}
 
       - file: "src/pages/bear/index.md"
         label: "Bear League"
@@ -80,7 +80,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bear-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Description, name: description, widget: markdown}}
+          - {label: Description, name: description, widget: markdown}
 
       - file: "src/pages/youth/index.md"
         label: "Youth Hockey"
@@ -88,4 +88,4 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bear-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Description, name: description, widget: markdown}}
+          - {label: Description, name: description, widget: markdown}

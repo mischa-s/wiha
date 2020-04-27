@@ -8,7 +8,6 @@ import { Text } from "@chakra-ui/core";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -23,7 +22,7 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export function PlayPageTemplate({ title, intro }) {
+export function PlayPageTemplate({ title, description }) {
   return (
     <ContentWrapper>
       <Heading
@@ -36,11 +35,8 @@ export function PlayPageTemplate({ title, intro }) {
       >
         {title}
       </Heading>
-      <Heading as="h2" my="3" size="lg">
-        {intro.heading}
-      </Heading>
       <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={intro.description} />
+        <ReactMarkdown source={description} />
       </Text>
     </ContentWrapper>
   );
@@ -48,9 +44,7 @@ export function PlayPageTemplate({ title, intro }) {
 
 PlayPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-  intro: PropTypes.object,
+  description: PropTypes.string.isRequired,
 };
 
 const PlayPage = ({ data }) => {
@@ -60,7 +54,7 @@ const PlayPage = ({ data }) => {
     <Layout>
       <PlayPageTemplate
         title={post.frontmatter.title}
-        intro={post.frontmatter.intro}
+        description={post.frontmatter.description}
       />
     </Layout>
   );
@@ -77,10 +71,7 @@ export const playPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        intro {
-          heading
-          description
-        }
+        description
       }
     }
   }

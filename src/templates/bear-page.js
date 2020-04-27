@@ -22,7 +22,7 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export function BearPageTemplate({ title, intro }) {
+export function BearPageTemplate({ title, description }) {
   return (
     <ContentWrapper>
       <Heading
@@ -35,11 +35,8 @@ export function BearPageTemplate({ title, intro }) {
       >
         {title}
       </Heading>
-      <Heading as="h2" my="3" size="lg">
-        {intro.heading}
-      </Heading>
       <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={intro.description} />
+        <ReactMarkdown source={description} />
       </Text>
     </ContentWrapper>
   );
@@ -47,9 +44,7 @@ export function BearPageTemplate({ title, intro }) {
 
 BearPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-  intro: PropTypes.object,
+  title: PropTypes.string.isRequired,
 };
 
 const BearPage = ({ data }) => {
@@ -59,7 +54,7 @@ const BearPage = ({ data }) => {
     <Layout>
       <BearPageTemplate
         title={post.frontmatter.title}
-        intro={post.frontmatter.intro}
+        description={post.frontmatter.description}
       />
     </Layout>
   );
@@ -76,10 +71,7 @@ export const bearPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        intro {
-          heading
-          description
-        }
+        description
       }
     }
   }

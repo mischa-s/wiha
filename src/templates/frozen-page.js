@@ -112,8 +112,7 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export const FrozenPageTemplate = ({ title, details }) => {
-  const { heading, description } = details;
+export const FrozenPageTemplate = ({ title, description }) => {
 
   return (
     <ContentWrapper>
@@ -127,10 +126,6 @@ export const FrozenPageTemplate = ({ title, details }) => {
       >
         {title}
       </Heading>
-
-      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-        {heading}
-      </h2>
       <Text mb="5" fontSize="lg">
         <ReactMarkdown source={description} />
       </Text>
@@ -141,7 +136,7 @@ export const FrozenPageTemplate = ({ title, details }) => {
 
 FrozenPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  details: PropTypes.object,
+  description: PropTypes.string.isRequired,
 };
 
 const FrozenPage = ({ data }) => {
@@ -151,7 +146,7 @@ const FrozenPage = ({ data }) => {
     <Layout>
       <FrozenPageTemplate
         title={post.frontmatter.title}
-        details={post.frontmatter.details}
+        description={post.frontmatter.description}
       />
     </Layout>
   );
@@ -168,10 +163,7 @@ export const frozenPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        details {
-          heading
-          description
-        }
+        description
       }
     }
   }

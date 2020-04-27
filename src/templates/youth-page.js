@@ -23,7 +23,7 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export function YouthPageTemplate({ title, intro }) {
+export function YouthPageTemplate({ title, description }) {
   return (
     <ContentWrapper>
       <Heading
@@ -37,10 +37,10 @@ export function YouthPageTemplate({ title, intro }) {
         {title}
       </Heading>
       <Heading as="h2" my="3" size="lg">
-        {intro.heading}
+        {description.heading}
       </Heading>
       <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={intro.description} />
+        <ReactMarkdown source={description} />
       </Text>
     </ContentWrapper>
   );
@@ -48,9 +48,7 @@ export function YouthPageTemplate({ title, intro }) {
 
 YouthPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-  intro: PropTypes.object,
+  description: PropTypes.object,
 };
 
 const YouthPage = ({ data }) => {
@@ -60,7 +58,7 @@ const YouthPage = ({ data }) => {
     <Layout>
       <YouthPageTemplate
         title={post.frontmatter.title}
-        intro={post.frontmatter.intro}
+        description={post.frontmatter.description}
       />
     </Layout>
   );
@@ -77,10 +75,7 @@ export const youthPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        intro {
-          heading
-          description
-        }
+        description
       }
     }
   }

@@ -19,15 +19,13 @@ const ThemeWrapper = ({ element }) => (
 );
 
 const BearPagePreview = ({ entry }) => {
-  const heading = entry.getIn(["data", "intro", "heading"]);
-  const description = entry.getIn(["data", "intro", "description"]);
 
   return (
     <ThemeWrapper
       element={
         <BearPageTemplate
           title={entry.getIn(["data", "title"])}
-          intro={{ heading, description }}
+          description={entry.getIn(["data", "description"])}
         />
       }
     />
@@ -36,7 +34,7 @@ const BearPagePreview = ({ entry }) => {
 
 BearPagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func
+    getIn: PropTypes.func,
   }),
 };
 

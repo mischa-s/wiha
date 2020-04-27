@@ -19,15 +19,13 @@ const ThemeWrapper = ({ element }) => (
 );
 
 const YouthPagePreview = ({ entry }) => {
-  const heading = entry.getIn(["data", "intro", "heading"]);
-  const description = entry.getIn(["data", "intro", "description"]);
 
   return (
     <ThemeWrapper
       element={
         <YouthPageTemplate
           title={entry.getIn(["data", "title"])}
-          intro={{ heading, description }}
+          description={entry.getIn(["data", "intro", "description"])}
         />
       }
     />
