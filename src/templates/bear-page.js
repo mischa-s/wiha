@@ -8,7 +8,6 @@ import { Text } from "@chakra-ui/core";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -23,7 +22,7 @@ const ContentWrapper = styled.section`
   }
 `;
 
-export function BearLeaguePageTemplate({ title, intro }) {
+export function BearPageTemplate({ title, intro }) {
   return (
     <ContentWrapper>
       <Heading
@@ -46,19 +45,19 @@ export function BearLeaguePageTemplate({ title, intro }) {
   );
 }
 
-BearLeaguePageTemplate.propTypes = {
+BearPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   intro: PropTypes.object,
 };
 
-const BearLeaguePage = ({ data }) => {
+const BearPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <BearLeaguePageTemplate
+      <BearPageTemplate
         title={post.frontmatter.title}
         intro={post.frontmatter.intro}
       />
@@ -66,14 +65,14 @@ const BearLeaguePage = ({ data }) => {
   );
 };
 
-BearLeaguePage.propTypes = {
+BearPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default BearLeaguePage;
+export default BearPage;
 
-export const bearLeaguePageQuery = graphql`
-  query BearLeaguePage($id: String!) {
+export const bearPageQuery = graphql`
+  query BearPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

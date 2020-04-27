@@ -127,7 +127,6 @@ export const FrozenPageTemplate = ({ title, details }) => {
       >
         {title}
       </Heading>
-      <Stats />
 
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
         {heading}
@@ -135,6 +134,7 @@ export const FrozenPageTemplate = ({ title, details }) => {
       <Text mb="5" fontSize="lg">
         <ReactMarkdown source={description} />
       </Text>
+      <Stats />
     </ContentWrapper>
   );
 };

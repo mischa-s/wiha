@@ -25,7 +25,7 @@ const BearPagePreview = ({ entry }) => {
   return (
     <ThemeWrapper
       element={
-        <BearLeaguePageTemplate
+        <BearPageTemplate
           title={entry.getIn(["data", "title"])}
           intro={{ heading, description }}
         />

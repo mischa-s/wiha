@@ -58,26 +58,34 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: Team, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}, {label: Team Members, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image, required: false}, {label: Text, name: text, widget: markdown}]}]}
 
-      - file: "src/pages/bear/index.md"
-        label: "Bear"
-        name: "bear"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bear-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: Team, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}]}
-
       - file: "src/pages/play/index.md"
-        label: "Play"
+        label: "Play Overview"
         name: "play"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "play-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Details, name: details, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}]}
+          - {label: Description, name: description, widget: markdown}}
 
       - file: "src/pages/frozen/index.md"
-        label: "Frozen"
+        label: "Frozen Fours"
         name: "frozen"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "frozen-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: Details, name: details, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}]}
+          - {label: Description, name: description, widget: markdown}}
+
+      - file: "src/pages/bear/index.md"
+        label: "Bear League"
+        name: "bear"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bear-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Description, name: description, widget: markdown}}
+
+      - file: "src/pages/youth/index.md"
+        label: "Youth Hockey"
+        name: "youth"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bear-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Description, name: description, widget: markdown}}
