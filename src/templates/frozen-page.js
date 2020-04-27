@@ -15,15 +15,16 @@ const Table = styled.table`
   overflow-x: scroll;
 
   th {
-    background: rgba(0, 0, 0, 0.80);
-    border: 1px solid rgba(0, 0, 0, 0.20);
-    color: #FEF001;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #fef001;
     text-align: center;
     text-transform: uppercase;
   }
 
-  th, td {
-    border: 1px solid rgba(0, 0, 0, 0.20);
+  th,
+  td {
+    border: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 12px;
   }
 `;
@@ -36,20 +37,15 @@ const Stats = ({}) => {
     <>
       {valueRanges.map((range, rangeIndex) => {
         const { values } = range;
+
         const rows =
           rangeIndex > 0
-            ? values.map(value => [
-                value[0],
-                value[2],
-                value[4],
-                value[5],
-                value[6]
-              ])
-            : values;
+            ? selectPlayerStats(values)
+            : sortTeams(values.slice(1, 5));
         return (
           <>
             <Heading as="h1" my="5" w="100%" size="lg" p={2}>
-              {rangeIndex > 0 ?  "Player Stats" : "Standings"}
+              {rangeIndex > 0 ? "Player Stats" : "Standings"}
             </Heading>
             <Table>
               <thead>
@@ -57,12 +53,7 @@ const Stats = ({}) => {
                   {rows[0].map((header, i) => {
                     return (
                       <th key={`${i}-${header}`}>
-                        <Heading
-                          as="h2"
-                          mb="2"
-                          size="md"
-                          p={2}
-                        >
+                        <Heading as="h2" mb="2" size="md" p={2}>
                           {header}
                         </Heading>
                       </th>
@@ -150,7 +141,7 @@ export const FrozenPageTemplate = ({ title, details }) => {
 
 FrozenPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  details: PropTypes.object
+  details: PropTypes.object,
 };
 
 const FrozenPage = ({ data }) => {
@@ -167,7 +158,7 @@ const FrozenPage = ({ data }) => {
 };
 
 FrozenPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 };
 
 export default FrozenPage;
@@ -185,3 +176,20 @@ export const frozenPageQuery = graphql`
     }
   }
 `;
+
+function selectPlayerStats (players) {
+  return players.map((value) => [
+    value[0],
+    value[2],
+    value[4],
+    value[5],
+    value[6],
+  ])
+}
+
+function sortTeams(teams) {
+  debugger
+  return teams.sort((a, b) => {
+    return b[5] === a[5] ? b[8] - a[8] : b[5] - a[5];
+  });
+}
