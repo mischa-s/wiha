@@ -33,11 +33,15 @@ mainpitch:
 
 
     Cupiditate et aut velit vel magni. Non maxime consequuntur accusantium voluptatem quia tempore non quas. Voluptatum ipsa quasi nulla et delectus. Aut quia officia et adipisci nobis optio aliquam enim.
-heading: Some more information could go below
-description: Description needs some details Description needs some details
-  Description needs some details Description needs some details Description
-  needs some details Description needs some details Description needs some
-  details Description needs some details Description needs some details
-  Description needs some details Description needs some details Description
-  needs some details
+heading: Could put some info about the seals here
+description: |-
+  Go Seals
+
+
+
+  **Seals rock!**
+
+
+
+  Yeaaahhhhh seals!
 ---
