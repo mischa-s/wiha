@@ -1,6 +1,7 @@
 import colors from "./colors";
 import sizes, { baseSizes } from "./sizes";
 import typography from "./typography";
+import icons from "./iconPaths";
 
 const space = baseSizes;
 
@@ -84,6 +85,7 @@ const theme = {
   sizes,
   shadows,
   space,
+  icons
 };
 
 export default theme;

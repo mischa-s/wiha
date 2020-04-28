@@ -54,16 +54,16 @@ export default function Navbar() {
           <div id="navMenu">
             <NavItems>
               <Menu>
-                <MenuButton variantColor={"blackAlpha"} size="lg" as={Button} >
-                  Play
+                <MenuButton variantColor={"blackAlpha"} size="lg" as={Button} rightIcon="chevron-down">
+                  Leagues
                 </MenuButton>
-                <MenuList>
-                  <Link to={"/play"}><MenuItem >Overview</MenuItem></Link>
+                <MenuList >
                   <Link to={"/frozen"}><MenuItem >Frozen Fours</MenuItem></Link>
                   <Link to={"/bear"}><MenuItem >Bear League</MenuItem></Link>
                   <Link to={"/youth"}><MenuItem >Youth</MenuItem></Link>
                 </MenuList>
               </Menu>
+              <NavButton link={"/play"} text={"Play"} />
               <NavButton link={"/about"} text={"About"} />
               <NavButton link={"/blog"} text={"Blog"} />
               <NavButton link={"/contact"} text={"Contact"} />
