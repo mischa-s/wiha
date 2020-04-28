@@ -12,7 +12,7 @@ import { Button } from "@chakra-ui/core";
 import { Heading } from "@chakra-ui/core";
 
 import Layout from "../../components/Layout";
-
+// import { GoogleMap } from "../../components/Map";
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -113,6 +113,7 @@ export default class Index extends React.Component {
               </Button>
             </Flex>
           </form>
+          {/* <GoogleMap /> */}
         </ContentWrapper>
       </Layout>
     );

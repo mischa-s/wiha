@@ -3,7 +3,7 @@ import axios from "axios";
 
 const googleKey = process.env.GATSBY_GOOGLE_API_KEY
 
-const useGoogleSpreadsheet = API_KEY => {
+const useGoogleSpreadsheet = () => {
   const [state, setState] = useState({ valueRanges: null, isFetching: false });
   useEffect(() => {
     const source = axios.CancelToken.source();
@@ -16,13 +16,13 @@ const useGoogleSpreadsheet = API_KEY => {
         });
         const { valueRanges } = data;
         setState({ valueRanges, isFetching: false });
+        source.cancel("cancelled by useEffect cleaning");
       } catch (err) {
         setState({ valueRanges: null, isFetching: false });
       }
     };
-    handleFetch(!API_KEY);
-    return () => source.cancel("cancelled by useEffect cleaning");
-  }, [API_KEY]);
+    handleFetch();
+  }, []);
   return state;
 };
 
