@@ -8,6 +8,7 @@ import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import github from "../img/github-icon.svg";
+import youtube from "../img/social/youtube.svg";
 
 const Footer = function() {
   const FooterWrapper = styled.footer`
@@ -81,14 +82,17 @@ const Footer = function() {
         </FooterPageLinks>
 
         <SocialLinks>
-          <a title="facebook" href="https://facebook.com">
+          <a title="facebook" href="https://www.facebook.com/wellingtonicehockeyassociation/">
             <SocialIcon src={facebook} alt="Facebook" />
           </a>
           <a title="twitter" href="https://twitter.com">
             <SocialIcon className="fas fa-lg" src={twitter} alt="Twitter" />
           </a>
-          <a title="instagram" href="https://instagram.com">
+          <a title="instagram" href="https://www.instagram.com/wellingtonicehockey/">
             <SocialIcon src={instagram} alt="Instagram" />
+          </a>
+          <a title="youtube" href="https://www.instagram.com/wellingtonicehockey/">
+            <SocialIcon src={youtube} alt="Youtube" />
           </a>
           <a
             title="github"
