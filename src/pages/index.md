@@ -35,8 +35,10 @@ mainpitch:
     Cupiditate et aut velit vel magni. Non maxime consequuntur accusantium voluptatem quia tempore non quas. Voluptatum ipsa quasi nulla et delectus. Aut quia officia et adipisci nobis optio aliquam enim.
 heading: Could put some info about the seals here
 description: |-
-  Go Seals\
-  \
+  Go Seals
+
+
+
   **Seals rock!**
 
 
