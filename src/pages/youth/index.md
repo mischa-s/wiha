@@ -16,10 +16,10 @@ description: >-
   These training sessions run at 4.30pm every Sunday at the ice rink located at 85 Port Road in Seaview.
 
 
-  **TRIALS**: There are no trials at this stage, just sign up and come along for a go. Gear can be hired at the ice rink for those that want to test it out
+  **TRIALS:** There are no trials at this stage, just sign up and come along for a go. Gear can be hired at the ice rink for those that want to test it out
 
 
-  **COST**: The registration form is just a registration of interest, costs associated with the sport are listed below and paid directly to the venue
+  **COST:** The registration form is just a registration of interest, costs associated with the sport are listed below and paid directly to the venue
 
 
   **GEAR**: see the drop down menu above for more detail
