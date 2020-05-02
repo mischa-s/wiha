@@ -91,7 +91,7 @@ const Footer = function() {
           <a title="instagram" href="https://www.instagram.com/wellingtonicehockey/">
             <SocialIcon src={instagram} alt="Instagram" />
           </a>
-          <a title="youtube" href="https://www.instagram.com/wellingtonicehockey/">
+          <a title="youtube" href="https://www.youtube.com/channel/UCzk1ai4cv3z95OmquetMujg">
             <SocialIcon src={youtube} alt="Youtube" />
           </a>
           <a
