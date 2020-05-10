@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { Heading } from "@chakra-ui/core";
-import { Text } from "@chakra-ui/core";
 
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
+import markdownRenderers from "../lib/markdown-renderers"
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -38,9 +38,9 @@ export function YouthPageTemplate({ title, description }) {
       <Heading as="h2" my="3" size="lg">
         {description.heading}
       </Heading>
-      <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={description} className="" />
-      </Text>
+      <div>
+        <ReactMarkdown source={description} className="" renderers={markdownRenderers}/>
+      </div>
     </ContentWrapper>
   );
 }
