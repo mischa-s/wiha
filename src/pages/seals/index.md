@@ -1,5 +1,5 @@
 ---
 templateKey: seals-page
-title: Wellingotn Seals
+title: Wellington Seals
 description: Some information about the seals
 ---
