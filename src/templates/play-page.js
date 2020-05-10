@@ -7,6 +7,7 @@ import { Heading } from "@chakra-ui/core";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
+import markdownRenderers from "../lib/markdown-renderers"
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -35,7 +36,7 @@ export function PlayPageTemplate({ title, description }) {
         {title}
       </Heading>
       <div>
-        <ReactMarkdown source={description} className="" />
+        <ReactMarkdown source={description} className="" renderers={markdownRenderers} />
       </div>
     </ContentWrapper>
   );

@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { Heading } from "@chakra-ui/core";
-import { Text } from "@chakra-ui/core";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 import useGoogleSpreadsheet from "../lib/use-google-spreadsheet";
+import markdownRenderers from "../lib/markdown-renderers"
 
 const Table = styled.table`
   width: 50em;
@@ -123,9 +123,9 @@ export const FrozenPageTemplate = ({ title, description }) => {
       >
         {title}
       </Heading>
-      <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={description} className="" />
-      </Text>
+      <div>
+        <ReactMarkdown source={description} className=""  renderers={markdownRenderers} />
+      </div>
       <Stats />
     </ContentWrapper>
   );
