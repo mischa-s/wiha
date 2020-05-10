@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import styled from "@emotion/styled";
 import { Heading } from "@chakra-ui/core";
 
 import ReactMarkdown from "react-markdown";
@@ -9,18 +8,7 @@ import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 import markdownRenderers from "../lib/markdown-renderers"
 
-const ContentWrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  width: 70em;
-  align-items: left;
-  max-width: 100%;
-  margin: 2em auto;
-
-  p {
-    padding: 0.75em 0;
-  }
-`;
+import ContentWrapper from "../lib/content-wrapper";
 
 export function PlayPageTemplate({ title, description }) {
   return (

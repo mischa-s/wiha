@@ -13,18 +13,7 @@ import { Heading } from "@chakra-ui/core";
 import Content, { HTMLContent } from "../components/Content";
 import Layout from "../components/Layout";
 
-const ContentWrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  width: 50em;
-  align-items: left;
-  max-width: 100%;
-  margin: 2em auto;
-
-  p {
-    padding: 0.75em 0;
-  }
-`;
+import ContentWrapper from "../lib/content-wrapper";
 
 const TagWrapper = styled.div`
   margin: 2em auto;
