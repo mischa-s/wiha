@@ -58,6 +58,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: Team, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: markdown}, {label: Team Members, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image, required: false}, {label: Text, name: text, widget: markdown}]}]}
 
+      - file: "src/pages/seals/index.md"
+        label: "Wellington Seals"
+        name: "seals"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "seals-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Description, name: description, widget: markdown}
+
       - file: "src/pages/play/index.md"
         label: "Play Overview"
         name: "play"

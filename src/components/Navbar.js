@@ -35,6 +35,10 @@ const menuItems = [
     label: "Play",
   },
   {
+    link: "/seals",
+    label: "Seals",
+  },
+  {
     link: "/about",
     label: "About",
   },
@@ -232,6 +236,7 @@ function DesktopNav() {
         </Menu>
         <NavButton link={"/play"} text={"Play"} />
         <NavButton link={"/about"} text={"About"} />
+        <NavButton link={"/seal"} text={"Seals"} />
         <NavButton link={"/blog"} text={"Blog"} />
         <NavButton link={"/contact"} text={"Contact"} />
       </NavItems>
