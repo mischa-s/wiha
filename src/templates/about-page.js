@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { Heading } from "@chakra-ui/core";
-import { Text } from "@chakra-ui/core";
 
 import ReactMarkdown from "react-markdown";
 
@@ -39,9 +38,9 @@ export function AboutPageTemplate({ title, intro }) {
       <Heading as="h2" my="3" size="lg">
         {intro.heading}
       </Heading>
-      <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={intro.description} />
-      </Text>
+      <div>
+        <ReactMarkdown source={intro.description} className=""/>
+      </div>
       {intro && <Features gridItems={intro.blurbs} />}
     </ContentWrapper>
   );

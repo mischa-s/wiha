@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { Heading } from "@chakra-ui/core";
-import { Text } from "@chakra-ui/core";
 
 import ReactMarkdown from "react-markdown";
 
@@ -35,9 +34,9 @@ export function PlayPageTemplate({ title, description }) {
       >
         {title}
       </Heading>
-      <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={description} />
-      </Text>
+      <div>
+        <ReactMarkdown source={description} className="" />
+      </div>
     </ContentWrapper>
   );
 }

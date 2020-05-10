@@ -18,11 +18,13 @@ const FeatureWrapper = styled.section`
 const FeatureGrid = ({ gridItems }) => (
   <Flex wrap={"wrap"} justify={"space-between"}>
     {gridItems &&
-      gridItems.map(item => (
+      gridItems.map((item) => (
         <div key={item.text}>
           <FeatureWrapper>
             <ImageWrapper src={item.image} />
-            <ReactMarkdown source={item.text} />
+            <div>
+              <ReactMarkdown source={item.text} />
+            </div>
           </FeatureWrapper>
         </div>
       ))}
@@ -33,9 +35,9 @@ FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string
+      text: PropTypes.string,
     })
-  )
+  ),
 };
 
 export default FeatureGrid;

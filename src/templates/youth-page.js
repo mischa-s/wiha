@@ -8,7 +8,6 @@ import { Text } from "@chakra-ui/core";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 
 const ContentWrapper = styled.section`
   display: flex;
@@ -40,7 +39,7 @@ export function YouthPageTemplate({ title, description }) {
         {description.heading}
       </Heading>
       <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={description} />
+        <ReactMarkdown source={description} className="" />
       </Text>
     </ContentWrapper>
   );

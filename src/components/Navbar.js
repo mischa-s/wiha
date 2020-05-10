@@ -150,11 +150,11 @@ function MobileNav() {
 
           <DrawerBody>
             <Stack>
-              {menuItems.map((item) => {
+              {menuItems.map((item, key) => {
                 if (!item.link) {
-                  return <MobileAccordionItem items={item} />;
+                  return <MobileAccordionItem key={key} items={item} />;
                 }
-                return <MobileNavItem item={item} />;
+                return <MobileNavItem key={key} item={item} />;
               })}
             </Stack>
           </DrawerBody>

@@ -29,7 +29,7 @@ const Table = styled.table`
   }
 `;
 
-const Stats = ({}) => {
+const Stats = () => {
   const { valueRanges, isFetching } = useGoogleSpreadsheet();
   return isFetching ? (
     <div>Loading...</div>
@@ -39,9 +39,7 @@ const Stats = ({}) => {
         const { values } = range;
 
         const rows =
-          rangeIndex > 0
-            ? selectPlayerStats(values)
-            : sortTeams(values);
+          rangeIndex > 0 ? selectPlayerStats(values) : sortTeams(values);
         return (
           <>
             <Heading as="h1" my="5" w="100%" size="lg" p={2}>
@@ -113,7 +111,6 @@ const ContentWrapper = styled.section`
 `;
 
 export const FrozenPageTemplate = ({ title, description }) => {
-
   return (
     <ContentWrapper>
       <Heading
@@ -127,7 +124,7 @@ export const FrozenPageTemplate = ({ title, description }) => {
         {title}
       </Heading>
       <Text mb="5" fontSize="lg">
-        <ReactMarkdown source={description} />
+        <ReactMarkdown source={description} className="" />
       </Text>
       <Stats />
     </ContentWrapper>
@@ -169,19 +166,19 @@ export const frozenPageQuery = graphql`
   }
 `;
 
-function selectPlayerStats (players) {
+function selectPlayerStats(players) {
   return players.map((value) => [
     value[0],
     value[2],
     value[4],
     value[5],
     value[6],
-  ])
+  ]);
 }
 
 function sortTeams(values) {
-  const teams =  values.slice(1, 5).sort((a, b) => {
+  const teams = values.slice(1, 5).sort((a, b) => {
     return b[5] === a[5] ? b[8] - a[8] : b[5] - a[5];
   });
-  return [values[0], ...teams]
+  return [values[0], ...teams];
 }
