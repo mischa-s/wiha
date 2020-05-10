@@ -7,7 +7,7 @@ import BlogPostPreview from './preview-templates/BlogPostPreview'
 import PlayPagePreview from './preview-templates/PlayPagePreview'
 import FrozenPagePreview from './preview-templates/FrozenPagePreview'
 import BearPagePreview from './preview-templates/BearPagePreview'
-import BearPagePreview from './preview-templates/SealsPagePreview'
+import SealsPagePreview from './preview-templates/SealsPagePreview'
 import YouthPagePreview from './preview-templates/YouthPagePreview'
 import withEmotion from "./with-emotion";
 
@@ -19,5 +19,5 @@ CMS.registerPreviewTemplate('blog', withEmotion(BlogPostPreview))
 CMS.registerPreviewTemplate('play', withEmotion(PlayPagePreview))
 CMS.registerPreviewTemplate('frozen', withEmotion(FrozenPagePreview))
 CMS.registerPreviewTemplate('bear', withEmotion(BearPagePreview))
-CMS.registerPreviewTemplate('seals', withEmotion(BearPagePreview))
+CMS.registerPreviewTemplate('seals', withEmotion(SealsPagePreview))
 CMS.registerPreviewTemplate('youth', withEmotion(YouthPagePreview))
