@@ -8,9 +8,6 @@ description: >-
   Games are played Sunday nights, the puck drops at 18:15 and 19:30.
 
 
-  Our aim is to provide a fun & safe environment for all players where they can enjoy the great sport of Ice Hockey.
-
-
   **Game format (running time)**
 
 
