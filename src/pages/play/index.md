@@ -6,14 +6,22 @@ description: >-
   enjoy the great sport of Ice Hockey.
 
 
-  There are lots of opportunities to play:
+  ###### There are lots of opportunities to play:
 
 
-  * Tuesday Evening: Bear league - for players who are just starting out (registration required)
+  * Tuesday Evening: [Bear league](https://wellington-ice-hockey.netlify.app/bear) - for players who are just starting out (*registration required*)
 
   * Wednesday Evening (18:15): Scrimmage - come one, come all!
 
-  * Saturday Morning: Womens only hockey - all other hockey is mixed gender
+  * Saturday Morning: Women's only hockey - all other hockey is mixed gender (*registration required*)
 
-  * Sunday Evening:  Frozen Fours League - a slightly faster league for players with at least 1 or 2 years experience (registration required)
+  * Sunday Afternoon:  [Youth hockey](https://wellington-ice-hockey.netlify.app/youth) - Practices and games for youth happen every Sunday between 16:00 - 18:00
+
+  * Sunday Evening:  [Frozen Fours League](https://wellington-ice-hockey.netlify.app/frozen) - a slightly faster league for players with at least 1 or 2 years experience (*registration required*)
+
+
+  ###### What about equipment?
+
+
+  Full gear is required for all ice time run by WIHA. To support new players joining this great sport, we have a large selection of gear available to borrow for players of all ages and sizes - please get in touch and we'll see if we can sort you out some gear.
 ---
