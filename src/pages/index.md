@@ -23,15 +23,11 @@ mainpitch:
 
 
     The hunger for having ice hockey in Wellington is there – we regularly field questions from fans about when the NZIHL could expand to include a sixth team
-heading: Could put some info about the seals here
-description: |-
-  Go Seals
+heading: The Wellington Seals
+description: >-
+  We have also got a travelling team that goes to tournaments around the
+  country!
 
 
-
-  **Seals rock!**
-
-
-
-  Yeaaahhhhh seals!
+  [Find out more about the Wellington Seals](https://wellington-ice-hockey.netlify.app/seals)
 ---
