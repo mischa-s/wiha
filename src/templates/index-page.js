@@ -161,8 +161,6 @@ export const IndexPageTemplate = ({
               <ReactMarkdown
               renderers={{
                 link: LinkRenderer,
-                image: ImageRenderer,
-                paragraph: ParagraphRenderer
               }}
               source={description}
             />
