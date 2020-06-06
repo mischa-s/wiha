@@ -5,9 +5,9 @@ intro:
   blurbs:
     - image: https://res.cloudinary.com/wiha/image/upload/v1579286543/logo_ptyjof.png
       text: |-
-        **A person has a name**
+        **Luke Turner**
 
-        As well as short bit about who they truly are.
+        President
     - image: https://res.cloudinary.com/wiha/image/upload/v1579286543/logo_ptyjof.png
       text: |-
         **Paul Edlin**
