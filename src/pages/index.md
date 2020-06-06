@@ -27,7 +27,5 @@ heading: The Wellington Seals
 description: >-
   We have also got a travelling team that goes to tournaments around the
   country!
-
-
-  [Find out more about the Wellington Seals](https://wellington-ice-hockey.netlify.app/seals)
+   [Find out more about the Wellington Seals](https://wellington-ice-hockey.netlify.app/seals)
 ---
