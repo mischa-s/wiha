@@ -27,5 +27,5 @@ description: >-
   After the game has finished teams have 2 minutes to shake hands & exit the ice so it can be groomed for the next game
 
 
-  *The current season is full but get in touch if you want to be notified regarding future seasons as the league continues to grow and ever season we welcome new players!*
+  *The current season is full but get in touch if you want to be notified regarding future seasons as the league continues to grow and every season we welcome new players!*
 ---
