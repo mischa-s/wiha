@@ -43,6 +43,10 @@
   "keywords": [
     "gatsby"
   ],
+  "resolutions": {
+    "dot-prop": ">=5.2.0",
+    "serialize-javascript": ">=3.1.0"
+  },
   "license": "MIT",
   "main": "n/a",
   "scripts": {
