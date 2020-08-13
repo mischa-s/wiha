@@ -12,8 +12,5 @@ description: >-
   ![wellington seals womens](https://res.cloudinary.com/wiha/image/upload/v1591416749/wellington-seals-women_g3ctdq.jpg "The Wellington Seals womens team")
 
 
-  The 
-
-
   ![](https://res.cloudinary.com/wiha/image/upload/v1591416748/wellington-seals-mens_khupos.jpg "The Wellington Seals mens team at the 2019 Masters tournament in Dunedin")
 ---
