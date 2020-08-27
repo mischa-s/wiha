@@ -9,16 +9,12 @@ description: >-
   ###### There are lots of opportunities to play:
 
 
-  * Tuesday Evening: [Bear league](https://wellington-ice-hockey.netlify.app/bear) - for players who are just starting out (*registration required*)
-
-  * Wednesday Evening (18:15): Scrimmage - come one, come all!
-
-  * Saturday Morning: Women's only hockey - all other hockey is mixed gender (*registration required*)
-
-  * Sunday Afternoon:  [Youth hockey](https://wellington-ice-hockey.netlify.app/youth) - Practices and games for youth happen every Sunday between 16:00 - 18:00
-
-  * Sunday Evening:  [Frozen Fours League](https://wellington-ice-hockey.netlify.app/frozen) - a slightly faster league for players with at least 1 or 2 years experience (*registration required*)
-
+  | Day of Week | Time  | Description |
+    | ----------- | ----- | ------------|
+    | Tuesday     | 19:30 | [Bear league](https://wellington-ice-hockey.netlify.app/bear) - for players who are just starting out (*registration required*) |
+    | Wednesday   | 18:15 | Scrimmage - come one, come all! |
+    | Sunday      | 16:30 | [Youth hockey](https://wellington-ice-hockey.netlify.app/youth) - Practices and games for youth |
+    | Sunday      | 18:15 | [Frozen Fours League](https://wellington-ice-hockey.netlify.app/frozen) - a slightly faster league for players with at least 1 or 2 years experience (*registration required*) |
 
   ###### What about equipment?
 
