@@ -11,6 +11,7 @@ import markdownRenderers from "../lib/markdown-renderers"
 import ContentWrapper from "../lib/content-wrapper";
 
 export function PlayPageTemplate({ title, description }) {
+  console.log(title, description, 'are these there?')
   return (
     <ContentWrapper>
       <Heading

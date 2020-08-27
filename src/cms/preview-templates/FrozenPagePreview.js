@@ -19,15 +19,12 @@ const ThemeWrapper = ({ element }) => (
 );
 
 const FrozenPagePreview = ({ entry }) => {
-  const heading = entry.getIn(["data", "details", "heading"]);
-  const description = entry.getIn(["data", "details", "description"]);
-
   return (
     <ThemeWrapper
       element={
         <FrozenPageTemplate
           title={entry.getIn(["data", "title"])}
-          details={{ heading, description }}
+          description={entry.getIn(["data", "description"])}
         />
       }
     />

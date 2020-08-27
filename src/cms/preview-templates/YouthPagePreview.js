@@ -25,7 +25,7 @@ const YouthPagePreview = ({ entry }) => {
       element={
         <YouthPageTemplate
           title={entry.getIn(["data", "title"])}
-          description={entry.getIn(["data", "intro", "description"])}
+          description={entry.getIn(["data", "description"])}
         />
       }
     />
