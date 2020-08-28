@@ -16,10 +16,10 @@ mainpitch:
     ![](https://res.cloudinary.com/wiha/image/upload/v1581723650/wellington-hockey_nydx3z.jpg)
 
 
-    ![](https://res.cloudinary.com/wiha/image/upload/v1588465203/frosty-hockey_gljafl.jpg)
-
-
     With the incorporation of Wellington Ice Hockey Association, October 9 has become a date worth etching into the history books of New Zealand ice hockey. That date has come after many long days and nights of hard work by those involved, driven solely by their passion for the game and their want to see it succeed.
+
+
+    ![](https://res.cloudinary.com/wiha/image/upload/v1588465203/frosty-hockey_gljafl.jpg)
 
 
     The hunger for having ice hockey in Wellington is there – we regularly field questions from fans about when the NZIHL could expand to include a sixth team
