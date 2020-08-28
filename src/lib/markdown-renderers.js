@@ -9,7 +9,7 @@ const Table = styled.table`
   margin: 1rem 0;
 
   th {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     border: 1px solid rgba(0, 0, 0, 0.2);
     color: #fef001;
     text-transform: uppercase;
