@@ -13,7 +13,7 @@ import { Heading } from "@chakra-ui/core";
 import Content, { HTMLContent } from "../components/Content";
 import Layout from "../components/Layout";
 
-import ContentWrapper from "../lib/content-wrapper";
+import ContentWrapper from "../styles/content-wrapper";
 
 const TagWrapper = styled.div`
   margin: 2em auto;

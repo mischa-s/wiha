@@ -8,7 +8,7 @@ import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
 import useGoogleSpreadsheet from "../lib/use-google-spreadsheet";
 import markdownRenderers from "../lib/markdown-renderers";
-import ContentWrapper from "../lib/content-wrapper";
+import ContentWrapper from "../styles/content-wrapper";
 
 const Table = styled.table`
   width: 50em;

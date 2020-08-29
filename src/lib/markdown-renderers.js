@@ -1,27 +1,22 @@
 import React from "react";
 import { List, ListItem } from "@chakra-ui/core";
-import styled from "@emotion/styled";
+import Headings from "../styles/headings";
+import Table from '../styles/table'
 
-const Table = styled.table`
-  width: 50em;
-  max-width: 100%;
-  overflow-x: scroll;
-  margin: 1rem 0;
+const { Title, Title1, Title2, Title3, Headline, Subheadline } = Headings
 
-  th {
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    color: #fef001;
-    text-transform: uppercase;
-  }
-
-  th,
-  td {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-  }
-`;
-
+const HeadingResolver = ({ level, children }) => {
+  const componentsByLevel = [
+    Title,
+    Title1,
+    Title2,
+    Title3,
+    Headline,
+    Subheadline
+  ];
+  const ResolvedComponent = componentsByLevel[level - 1];
+  return <ResolvedComponent>{children}</ResolvedComponent>;
+};
 
 export default {
   list: function ChakraList(props) {
@@ -32,5 +27,6 @@ export default {
   },
   table: function StyledTable(props) {
     return <Table>{props.children}</Table>
-  }
+  },
+  heading: HeadingResolver
 };

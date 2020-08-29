@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 
-import ContentWrapper from "../lib/content-wrapper";
+import ContentWrapper from "../styles/content-wrapper";
 
 export function SealsPageTemplate({ title, description }) {
   return (

@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import ContentWrapper from "../lib/content-wrapper";
+import ContentWrapper from "../styles/content-wrapper";
 
 export function AboutPageTemplate({ title, intro }) {
   return (
