@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Website Launch
 date: 2020-08-29T04:49:03.859Z
-description: New website
+description: WIHA now has a website!
 tags:
   - hockey
 ---
