@@ -13,7 +13,7 @@ description: >-
   There are currently ice hockey trainings for beginners that are run by a Coach that previously played in the New Zealand National Ice Hockey League as well as Canadian Coaches. The current trainings include skills training, followed by casual game play.
 
 
-  These training sessions run at 4.30pm every Sunday at the ice rink located at 85 Port Road in Seaview.
+  These training sessions run at 4.30pm every Sunday at the ice rink located at 25 Blenheim Street in Upper Hutt
 
 
   **TRIALS:** There are no trials at this stage, just sign up and come along for a go. Gear can be hired at the ice rink for those that want to test it out
