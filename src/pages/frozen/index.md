@@ -10,7 +10,6 @@ description: >-
 
   ### **Game format**
 
-  Games include
 
   - 3 minutes of warmup time
 
