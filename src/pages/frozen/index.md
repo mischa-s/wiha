@@ -32,7 +32,7 @@ description: >-
 
   ### *Schedule*
 
-  Date | 18:15 | 19:30
+  Date/Time | 18:15 | 19:30
 
   | ------------- |
 
