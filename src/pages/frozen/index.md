@@ -8,26 +8,19 @@ description: >-
   Games are played Sunday nights, the puck drops at 18:15 and 19:30.
 
 
-  ### **Game format (running time)**
+  ### **Game format**
 
+  Games include
 
-  * 3 Minute warm up
+  - 3 minutes of warmup time
 
-  * 1st period – 15 minutes
+  - 3 x 15 minute periods (running time)
 
-  * 60 second break
-
-  * 2nd period – 15 minutes
-
-  * 60 second break
-
-  * 3rd period – 15 minutes
+  - 60 second breaks between periods
 
 
   After the game has finished teams have 2 minutes to shake hands & exit the ice so it can be groomed for the next game
 
-
-  *The current season is full but get in touch if you want to be notified regarding future seasons as the league continues to grow and every season we welcome new players!*
 
 
   ### Upcoming Games
