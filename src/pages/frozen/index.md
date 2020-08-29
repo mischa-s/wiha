@@ -33,11 +33,11 @@ description: >-
   ### *Schedule*
 
 
-  | Date/Time      | 18:15                             |                           | 19:30 |
+  | Date/Time      | 18:15  | 19:30 |
 
   | -------------- | --------------------------------- | ------------------------- | ----- |
 
-  | **6/09/2020**  | **ColdCuts**  *vs* **Flamingos**  | **Krakens** *vs.* **RoughNecks**   |       |
+  | **6/09/2020**  | **ColdCuts**  *vs* **Flamingos**  | **Krakens** *vs.* **RoughNecks**   |
 
   | **13/09/2020** | **RoughNecks** *vs* **ColdCuts**  | **Flamingos** *vs.* **Krakens**       |
 
@@ -55,7 +55,7 @@ description: >-
 
   | **8/11/2020**  | **RoughNecks** *vs*	**Flamingos**| **ColdCuts** *vs.*	**Krakens**       |
 
-  | **15/11/2020** | **Krakens** *vs*	**RoughNecks**   | **Flamingos** *vs.*	**ColdCuts**       |
+  | **15/11/2020** | **Krakens** *vs*	**RoughNecks**   | **Flamingos** *vs.*	**ColdCuts**   |
 
-  | **22/11/2020** | Finals                            | Finals                    |       |
+  | **22/11/2020** | **3rd** *vs* **4th** | **1st** *vs* **2nd**|
 ---
