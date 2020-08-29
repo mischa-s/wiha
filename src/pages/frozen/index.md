@@ -8,7 +8,7 @@ description: >-
   Games are played Sunday nights, the puck drops at 18:15 and 19:30.
 
 
-  **Game format (running time)**
+  ### **Game format (running time)**
 
 
   * 3 Minute warm up
@@ -30,7 +30,7 @@ description: >-
   *The current season is full but get in touch if you want to be notified regarding future seasons as the league continues to grow and every season we welcome new players!*
 
 
-  ### Schedule
+  ### Upcoming Games
 
 
   | Date/Time      | 18:15                             | 19:30                              |
