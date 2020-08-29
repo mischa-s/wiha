@@ -6,4 +6,4 @@ description: WIHA now has a website!
 tags:
   - hockey
 ---
-It's not pretty, but hopefully in the coming months this can be an informative space for people wanting to learn more about Ice Hockey in Wellington
+It is very simple for now, but hopefully in the coming months this can be an informative space for people wanting to learn more about Ice Hockey in Wellington
