@@ -30,7 +30,7 @@ description: >-
   *The current season is full but get in touch if you want to be notified regarding future seasons as the league continues to grow and every season we welcome new players!*
 
 
-  ### Schedule
+  ### Upcoming Games
 
 
   | Date/Time      | 18:15                             | 19:30                              |
