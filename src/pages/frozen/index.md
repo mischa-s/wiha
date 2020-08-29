@@ -8,7 +8,7 @@ description: >-
   Games are played Sunday nights, the puck drops at 18:15 and 19:30.
 
 
-  **Game format (running time)**
+  ### **Game format (running time)**
 
 
   * 3 Minute warm up
