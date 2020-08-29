@@ -32,29 +32,30 @@ description: >-
 
   ### *Schedule*
 
-  Date/Time | 18:15 | 19:30
 
-  | ------------- |
+  | Date/Time      | 18:15                             |                           | 19:30 |
 
-  **6/09/2020** | Cold Cuts vs. Flamingos |Krakens vs. Rough Necks |
+  | -------------- | --------------------------------- | ------------------------- | ----- |
 
-  **13/09/2020** |Rough Necks vs. Cold Cuts| Flamingos vs. Krakens |
+  | **6/09/2020**  | **ColdCuts**  *vs* **Flamingos**  | **Krakens** *vs.* **RoughNecks**   |       |
 
-  **20/09/2020** | Krakens vs.	Cold Cuts | Flamingos vs.	Rough Necks |
+  | **13/09/2020** | **RoughNecks** *vs* **ColdCuts**  | **Flamingos** *vs.* **Krakens**       |
 
-  **27/09/2020** | Rough Necks vs.	Krakens | Cold Cuts vs.	Flamingos |
+  | **20/09/2020** | **Krakens** *vs*	**ColdCuts**     | **Flamingos** *vs.*	**RoughNecks**       |
 
-  **4/10/2020** | Flamingos vs.	Rough Necks | Krakens vs.	Cold Cuts |
+  | **27/09/2020** | **RoughNecks** *vs*	**Krakens**  | **ColdCuts** *vs.*	**Flamingos**       |
 
-  **11/10/2020** | Cold Cuts vs.	Rough Necks | Krakens vs.	Flamingos |
+  | **4/10/2020**  | **Flamingos** *vs*	**RoughNecks** | **Krakens** *vs.*	**ColdCuts**       |
 
-  **18/10/2020** | Flamingos vs.	Cold Cuts | Rough Necks vs.	Krakens |
+  | **11/10/2020** | **ColdCuts** *vs*	**RoughNecks** | **Krakens** *vs.*	**Flamingos**       |
 
-  **1/11/2020** | Krakens vs.	Flamingos | Cold Cuts vs.	Rough Necks |
+  | **18/10/2020** | **Flamingos** *vs*	**ColdCuts**   | **RoughNecks** *vs.*	**Krakens**       |
 
-  **8/11/2020** | Rough Necks vs.	Flamingos | Cold Cuts vs.	Krakens |
+  | **1/11/2020**  | **Krakens** *vs*	**Flamingos**    | **ColdCuts** *vs.*	**RoughNecks**       |
 
-  **15/11/2020** | Krakens vs.	Rough Necks | Flamingos vs.	Cold Cuts |
+  | **8/11/2020**  | **RoughNecks** *vs*	**Flamingos**| **ColdCuts** *vs.*	**Krakens**       |
 
-  **22/11/2020** | Finals | Finals |
+  | **15/11/2020** | **Krakens** *vs*	**RoughNecks**   | **Flamingos** *vs.*	**ColdCuts**       |
+
+  | **22/11/2020** | Finals                            | Finals                    |       |
 ---
