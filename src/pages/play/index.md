@@ -3,13 +3,13 @@ templateKey: play-page
 title: Ice Hockey in Wellington
 description: >-
   Our aim is to provide a fun & safe environment for all players where they can
-  enjoy the great sport of Ice Hockey.
+  enjoy the great sport of Ice Hockey. 
 
 
   #### There are lots of opportunities to play:
 
 
-  | Day  | Time      | Description                                                                                                                                                                       |
+  | Day           | Time      | Description                                                                                                                                                                       |
 
   | ------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
@@ -26,4 +26,10 @@ description: >-
 
 
   Full gear is required for all ice time run by WIHA. To support new players joining this great sport, we have a large selection of gear available to borrow for players of all ages and sizes - please get in touch and we'll see if we can sort you out some gear.
+
+
+  ### Location
+
+
+  The rink has recently re-located to: **25 Blenheim Street, Upper Hutt 5018.**
 ---
