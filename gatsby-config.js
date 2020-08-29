@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'WIHA - Wellington Ice Hockey Association',
+    title: 'WIHA',
     description:
-      'The website for the wellington ice hockey association',
+      'Wellington Ice Hockey Association',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
