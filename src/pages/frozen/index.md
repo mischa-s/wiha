@@ -29,25 +29,25 @@ description: >-
 
   | -------------- | ---------------------------------- | ---------------------------------- |
 
-  | **6/09/2020**  | **ColdCuts**  *vs.* **Flamingos**  | **Krakens** *vs.* **RoughNecks**   |
+  | **6/09/2020**  | **ColdCuts**  *vs.* **Firehawks**  | **Krakens** *vs.* **RoughNecks**   |
 
-  | **13/09/2020** | **RoughNecks** *vs.* **ColdCuts**  | **Flamingos** *vs.* **Krakens**    |
+  | **13/09/2020** | **RoughNecks** *vs.* **ColdCuts**  | **Firehawks** *vs.* **Krakens**    |
 
-  | **20/09/2020** | **Krakens** *vs.* **ColdCuts**     | **Flamingos** *vs.* **RoughNecks** |
+  | **20/09/2020** | **Krakens** *vs.* **ColdCuts**     | **Firehawks** *vs.* **RoughNecks** |
 
-  | **27/09/2020** | **RoughNecks** *vs.* **Krakens**   | **ColdCuts** *vs.* **Flamingos**   |
+  | **27/09/2020** | **RoughNecks** *vs.* **Krakens**   | **ColdCuts** *vs.* **Firehawks**   |
 
-  | **4/10/2020**  | **Flamingos** *vs.* **RoughNecks** | **Krakens** *vs.* **ColdCuts**     |
+  | **4/10/2020**  | **Firehawks** *vs.* **RoughNecks** | **Krakens** *vs.* **ColdCuts**     |
 
-  | **11/10/2020** | **ColdCuts** *vs.* **RoughNecks**  | **Krakens** *vs.* **Flamingos**    |
+  | **11/10/2020** | **ColdCuts** *vs.* **RoughNecks**  | **Krakens** *vs.* **Firehawks**    |
 
-  | **18/10/2020** | **Flamingos** *vs.* **ColdCuts**   | **RoughNecks** *vs.* **Krakens**   |
+  | **18/10/2020** | **Firehawks** *vs.* **ColdCuts**   | **RoughNecks** *vs.* **Krakens**   |
 
-  | **1/11/2020**  | **Krakens** *vs.* **Flamingos**    | **ColdCuts** *vs.* **RoughNecks**  |
+  | **1/11/2020**  | **Krakens** *vs.* **Firehawks**    | **ColdCuts** *vs.* **RoughNecks**  |
 
-  | **8/11/2020**  | **RoughNecks** *vs.* **Flamingos** | **ColdCuts** *vs.* **Krakens**     |
+  | **8/11/2020**  | **RoughNecks** *vs.* **Firehawks** | **ColdCuts** *vs.* **Krakens**     |
 
-  | **15/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Flamingos** *vs.* **ColdCuts**   |
+  | **15/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Firehawks** *vs.* **ColdCuts**   |
 
   | **22/11/2020** | **3rd** *vs* **4th**               | **1st** *vs* **2nd**               |
 ---
