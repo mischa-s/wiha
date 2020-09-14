@@ -29,8 +29,6 @@ description: >-
 
   | -------------- | ---------------------------------- | ---------------------------------- |
 
-  | **13/09/2020** | **RoughNecks** *vs.* **ColdCuts**  | **Firehawks** *vs.* **Krakens**    |
-
   | **20/09/2020** | **Krakens** *vs.* **ColdCuts**     | **Firehawks** *vs.* **RoughNecks** |
 
   | **27/09/2020** | **RoughNecks** *vs.* **Krakens**   | **ColdCuts** *vs.* **Firehawks**   |
