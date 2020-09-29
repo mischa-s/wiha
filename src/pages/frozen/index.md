@@ -11,37 +11,34 @@ description: >-
   ### **Game format**
 
 
-  - 3 minutes of warmup time
+  * 3 minutes of warmup time
 
-  - 3 x 15 minute periods (running time)
+  * 3 x 15 minute periods (running time)
 
-  - 60 second breaks between periods
+  * 60 second breaks between periods
 
 
   After the game has finished teams have 2 minutes to shake hands & exit the ice so it can be groomed for the next game
 
 
-
   ### Upcoming Games
 
 
-  | Date/Time      | 18:15                              | 19:30                              |
+  | Date/Time      | 18:15                              | 19:30                             |
 
-  | -------------- | ---------------------------------- | ---------------------------------- |
+  | -------------- | ---------------------------------- | --------------------------------- |
 
-  | **27/09/2020** | **RoughNecks** *vs.* **Krakens**   | **ColdCuts** *vs.* **Firehawks**   |
+  | **4/10/2020**  | **Firehawks** *vs.* **RoughNecks** | **Krakens** *vs.* **ColdCuts**    |
 
-  | **4/10/2020**  | **Firehawks** *vs.* **RoughNecks** | **Krakens** *vs.* **ColdCuts**     |
+  | **11/10/2020** | **ColdCuts** *vs.* **RoughNecks**  | **Krakens** *vs.* **Firehawks**   |
 
-  | **11/10/2020** | **ColdCuts** *vs.* **RoughNecks**  | **Krakens** *vs.* **Firehawks**    |
+  | **18/10/2020** | **Firehawks** *vs.* **ColdCuts**   | **RoughNecks** *vs.* **Krakens**  |
 
-  | **18/10/2020** | **Firehawks** *vs.* **ColdCuts**   | **RoughNecks** *vs.* **Krakens**   |
+  | **1/11/2020**  | **Krakens** *vs.* **Firehawks**    | **ColdCuts** *vs.* **RoughNecks** |
 
-  | **1/11/2020**  | **Krakens** *vs.* **Firehawks**    | **ColdCuts** *vs.* **RoughNecks**  |
+  | **8/11/2020**  | **RoughNecks** *vs.* **Firehawks** | **ColdCuts** *vs.* **Krakens**    |
 
-  | **8/11/2020**  | **RoughNecks** *vs.* **Firehawks** | **ColdCuts** *vs.* **Krakens**     |
+  | **15/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Firehawks** *vs.* **ColdCuts**  |
 
-  | **15/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Firehawks** *vs.* **ColdCuts**   |
-
-  | **22/11/2020** | **3rd** *vs* **4th**               | **1st** *vs* **2nd**               |
+  | **22/11/2020** | **3rd** *vs* **4th**               | **1st** *vs* **2nd**              |
 ---
