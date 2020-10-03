@@ -2,10 +2,10 @@
 templateKey: frozen-page
 title: Frozen Fours
 description: >-
-  Frozen Fours is  is the fastest of the Wellington Ice Hockey leagues geared
-  towards players with a minimum of 3 - 5 seasons of playing experience. Men and
-  women play together in mixed teams – all games are strictly non-checking.
-  Games are played Sunday nights, the puck drops at 18:15 and 19:30.
+  Frozen Fours is the fastest of the Wellington Ice Hockey leagues geared
+  towards players with a minimum of 3 - 5 seasons of playing experience. Teams
+  are mixed gender and all games are strictly non-checking. Games are played
+  Sunday nights, the puck drops at 18:15 and 19:30.
 
 
   ### **Game format**
