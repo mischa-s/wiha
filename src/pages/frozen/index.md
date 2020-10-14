@@ -28,17 +28,15 @@ description: >-
 
   | -------------- | ---------------------------------- | --------------------------------- |
 
-  | **4/10/2020**  | **Firehawks** *vs.* **RoughNecks** | **Krakens** *vs.* **ColdCuts**    |
+  | **18/10/2020** | **ColdCuts** *vs.* **RoughNecks**  | **Krakens** *vs.* **Firehawks**   |
 
-  | **11/10/2020** | **ColdCuts** *vs.* **RoughNecks**  | **Krakens** *vs.* **Firehawks**   |
+  | **1/11/2020**  | **Firehawks** *vs.* **ColdCuts**   | **RoughNecks** *vs.* **Krakens**  |
 
-  | **18/10/2020** | **Firehawks** *vs.* **ColdCuts**   | **RoughNecks** *vs.* **Krakens**  |
+  | **8/11/2020**  | **Krakens** *vs.* **Firehawks**    | **ColdCuts** *vs.* **RoughNecks** |
 
-  | **1/11/2020**  | **Krakens** *vs.* **Firehawks**    | **ColdCuts** *vs.* **RoughNecks** |
+  | **15/11/2020** | **RoughNecks** *vs.* **Firehawks** | **ColdCuts** *vs.* **Krakens**    |
 
-  | **8/11/2020**  | **RoughNecks** *vs.* **Firehawks** | **ColdCuts** *vs.* **Krakens**    |
+  | **22/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Firehawks** *vs.* **ColdCuts**  |
 
-  | **15/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Firehawks** *vs.* **ColdCuts**  |
-
-  | **22/11/2020** | **3rd** *vs* **4th**               | **1st** *vs* **2nd**              |
+  | **29/11/2020** | **3rd** *vs* **4th**               | **1st** *vs* **2nd**              |
 ---
