@@ -17,8 +17,6 @@ description: >-
 
   | **Wednesday** | **18:15** | **Scrimmage**: Come one, come all - *drop-ins welcome*                                                                                                                            |
 
-  | **Saturday**  | **08:30** | **Practice**: Skills practice for adult beginners and Bear League players, run by Michael Chrobak - *drop-ins welcome*                                                            |
-
   | **Sunday**    | **16:30** | **[Youth hockey](https://wellington-ice-hockey.netlify.app/youth)**: Practices and games for youth - *new player drop-ins welcome, registration requried for ongoing*             |
 
   | **Sunday**    | **18:15** | **[Frozen Fours League](https://wellington-ice-hockey.netlify.app/frozen)**: A slightly faster league for players with at least 1 or 2 years experience - *registration required* |
