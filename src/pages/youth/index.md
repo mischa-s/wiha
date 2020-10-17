@@ -13,7 +13,7 @@ description: >-
   There are currently ice hockey trainings for beginners that are run by a Coach that previously played in the New Zealand National Ice Hockey League as well as Canadian Coaches. The current trainings include skills training, followed by casual game play.
 
 
-  These training sessions run at 4.30pm every Sunday at the ice rink located at 85 Port Road in Seaview.
+  These training sessions run at 4.30pm every Sunday at the ice rink located at 25 Blenheim Street in Upper Hutt
 
 
   **TRIALS:** There are no trials at this stage, just sign up and come along for a go. Gear can be hired at the ice rink for those that want to test it out
@@ -22,7 +22,7 @@ description: >-
   **COST:** The registration form is just a registration of interest, costs associated with the sport are listed below and paid directly to the venue
 
 
-  **GEAR**: see the drop down menu above for more detail
+  **GEAR**: Full gear is required for all ice time run by WIHA. To support new players joining this great sport, we have a large selection of gear available to borrow for players of all ages and sizes - please get in touch and we'll see if we can sort you out some gear.
 
 
   Things to consider
@@ -32,5 +32,5 @@ description: >-
 
   * Safety: Ice hockey has a reputation for being a rough sport, however, it is relatively safe due to all the equipment that players are required to wear. Furthermore, it is rare to have leagues in New Zealand that have ‘full contact’, or ‘checking’; only top New Zealand leagues allow full contact, so it will not be permitted in any Wellington ice hockey for the foreseeable future.
 
-  * Travel: The ice rink is located in Seaview, Lower Hutt.
+  * Location: 25 Blenheim Street, Upper Hutt 5018
 ---

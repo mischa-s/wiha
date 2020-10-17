@@ -2,30 +2,41 @@
 templateKey: frozen-page
 title: Frozen Fours
 description: >-
-  Frozen Fours is  is the fastest of the Wellington Ice Hockey leagues geared
-  towards players with a minimum of 3 - 5 seasons of playing experience. Men and
-  women play together in mixed teams – all games are strictly non-checking.
-  Games are played Sunday nights, the puck drops at 18:15 and 19:30.
+  Frozen Fours is the fastest of the Wellington Ice Hockey leagues geared
+  towards players with a minimum of 3 - 5 seasons of playing experience. Teams
+  are mixed gender and all games are strictly non-checking. Games are played
+  Sunday nights, the puck drops at 18:15 and 19:30.
 
 
-  **Game format (running time)**
+  ### **Game format**
 
 
-  * 3 Minute warm up
+  * 3 minutes of warmup time
 
-  * 1st period – 15 minutes
+  * 3 x 15 minute periods (running time)
 
-  * 60 second break
-
-  * 2nd period – 15 minutes
-
-  * 60 second break
-
-  * 3rd period – 15 minutes
+  * 60 second breaks between periods
 
 
   After the game has finished teams have 2 minutes to shake hands & exit the ice so it can be groomed for the next game
 
 
-  *The current season is full but get in touch if you want to be notified regarding future seasons as the league continues to grow and every season we welcome new players!*
+  ### Upcoming Games
+
+
+  | Date/Time      | 18:15                              | 19:30                             |
+
+  | -------------- | ---------------------------------- | --------------------------------- |
+
+  | **18/10/2020** | **ColdCuts** *vs.* **RoughNecks**  | **Krakens** *vs.* **Firehawks**   |
+
+  | **1/11/2020**  | **Firehawks** *vs.* **ColdCuts**   | **RoughNecks** *vs.* **Krakens**  |
+
+  | **8/11/2020**  | **Krakens** *vs.* **Firehawks**    | **ColdCuts** *vs.* **RoughNecks** |
+
+  | **15/11/2020** | **RoughNecks** *vs.* **Firehawks** | **ColdCuts** *vs.* **Krakens**    |
+
+  | **22/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Firehawks** *vs.* **ColdCuts**  |
+
+  | **29/11/2020** | **3rd** *vs* **4th**               | **1st** *vs* **2nd**              |
 ---
