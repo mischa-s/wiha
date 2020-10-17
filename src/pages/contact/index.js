@@ -91,20 +91,20 @@ export default class Index extends React.Component {
             </div>
             <FormControl>
               <FormLabel htmlFor="name">Name</FormLabel>
-              <Input type="input" id="name" />
+              <Input type="input" id="name" name="name" required onChange={this.handleChange}/>
             </FormControl>
             <FormControl>
               <FormLabel htmlFor="email">Email address</FormLabel>
-              <Input type="email" id="email" />
-            </FormControl>
+              <Input type="email" id="email" name="email" required onChange={this.handleChange} />
+            </FormControl>  
             <FormControl>
               <FormLabel htmlFor="message">Message</FormLabel>
               <Textarea
                 className="textarea"
-                name={"message"}
+                name="message"
                 onChange={this.handleChange}
                 id={"message"}
-                required={true}
+                required
               />
             </FormControl>
             <Flex mt='4' justify={"center"}>
