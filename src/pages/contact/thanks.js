@@ -19,7 +19,7 @@ export default () => (
         <h1>Message sent</h1>
       </Heading>
       <div>
-        <p>Thanks for getting in touch. We will try to back to within the next few days</p>
+        <p>Thanks for getting in touch! We love helping people with questions about hockey and will try get to back to you within the next few days</p>
 
         <Flex mt='4' justify={"center"}>
             <Link to="/">
