@@ -24,17 +24,13 @@ description: >-
   ### Upcoming Games
 
 
-  | Date/Time      | 18:15                              | 19:30                             |
+  | Date/Time      | 18:15                              | 19:30                            |
 
-  | -------------- | ---------------------------------- | --------------------------------- |
+  | -------------- | ---------------------------------- | -------------------------------- |
 
-  | **1/11/2020**  | **Firehawks** *vs.* **ColdCuts**   | **RoughNecks** *vs.* **Krakens**  |
+  | **15/11/2020** | **RoughNecks** *vs.* **Firehawks** | **ColdCuts** *vs.* **Krakens**   |
 
-  | **8/11/2020**  | **Krakens** *vs.* **Firehawks**    | **ColdCuts** *vs.* **RoughNecks** |
+  | **22/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Firehawks** *vs.* **ColdCuts** |
 
-  | **15/11/2020** | **RoughNecks** *vs.* **Firehawks** | **ColdCuts** *vs.* **Krakens**    |
-
-  | **22/11/2020** | **Krakens** *vs.* **RoughNecks**   | **Firehawks** *vs.* **ColdCuts**  |
-
-  | **29/11/2020** | **3rd** *vs* **4th**               | **1st** *vs* **2nd**              |
+  | **29/11/2020** | **3rd** *vs* **4th**               | **1st** *vs* **2nd**             |
 ---
