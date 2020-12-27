@@ -2,11 +2,14 @@
 templateKey: play-page
 title: Ice Hockey in Wellington
 description: >-
-  Our aim is to provide a fun & safe environment for all players where they can
-  enjoy the great sport of Ice Hockey. 
+  
+
+  Our aim is to provide a fun & safe environment for all players where they can enjoy the great sport of Ice Hockey. 
 
 
-  #### There are lots of opportunities to play:
+  #### Hockey is currently on hold for Summer. The hockey calendar for 2021 will be posted here when it is announced in mid January. The weekly schedule below was from 2020. A similiar schedule is anticipated for 2021
+
+
 
 
   | Day           | Time      | Description                                                                                                                                                                       |
